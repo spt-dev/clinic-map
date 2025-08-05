@@ -1,1 +1,1 @@
-# clinic-map
+# clinic-info

@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+/************************************
+ * Reset
+************************************/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+body,
+p {
+  margin: 0;
+}
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+label {
+  line-height: 1.1;
+}
+a:not([class]) {
+  color: currentColor;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+select {
+  font: inherit;
+}
+
+/************************************
+ * Base
+ ************************************/
+:root {
+  --base-width: 375; /* 基準幅 */
+  --max-width: 640; /* 最大幅 */
+  --base-font-size: 10; /* 基準フォントサイズ (10px) */
+  /* 最大横幅サイズ時の最大フォントサイズ */
+  --max-font-size: calc((var(--base-font-size) / var(--base-width)) * var(--max-width) * 1px);
+}
+
+html {
+  /** 以下指定で、横幅が --base-width 時に 1rem が 10pxとなる */
+  font-size: min(calc((var(--base-font-size) / var(--base-width)) * 100vw), var(--max-font-size));
+  scroll-behavior: smooth;
+}
+
+html[lang="ja"] body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Arial, "メイリオ", Meiryo, sans-serif;
+}
+
+html[lang="en"] body {
+	font-family: "Noto Sans", sans-serif;
+	font-weight: 400;
+}
+
+html[lang="zh-cmn-Hant"] body {
+	font-family: "Noto Sans TC", sans-serif;
+	font-weight: 400;
+}
+
+html[lang="ko"] body {
+	font-family: "Noto Sans KR", sans-serif;
+	font-weight: 400;
+}
+
+body {
+  font-family: 'Hiragino Kaku Gothic ProN', sans-serif;
+  font-style: normal;
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+}
+img,
+svg {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+a {
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+@media (hover: hover) {
+  a:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+  }
+  button:hover {
+    cursor: pointer;
+  }
+  label:hover {
+    cursor: pointer;
+  }
+}
+select {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
+  font-size: 1.4rem;
+}
+/************************************
+ * Page
+************************************/
+.page-wrap {
+  width: 100%;
+  max-width: calc(var(--max-width) * 1px);
+  margin: 0 auto;
+  overflow-x: hidden;
+  text-align: center;
+}
+.sec-title {
+  padding: 1rem 0;
+  margin-top: 15rem;
+  background-color: #f0f0f0;
+  font-size: 2rem;
+}
