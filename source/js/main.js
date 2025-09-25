@@ -8,21 +8,28 @@
  * @param {string} [params.colors.mainColor]
  * @param {string} [params.colors.subColor]
  */
-export function embedClinicMap({ parentSelector, clinicType, colors = {} }) {
-  // 引数のバリデーション
-  if (!parentSelector || !clinicType) {
-    throw new Error('"parentSelector" and "clinicType" is required.');
-  } else {
-    const isIdSelector = parentSelector.trim().startsWith('#');
-    if (!isIdSelector) {
-      throw new Error('Please specify an ID selector.');
-    }
+export function embedClinicMap({
+  parentSelector,
+  clinicType,
+  showClinicDetails = false,
+  colors = {},
+}) {
+  // ──────────────── 引数バリデーション ────────────────
+  try {
+    validateArgument({
+      parentSelector,
+      clinicType,
+      showClinicDetails,
+      colors,
+    });
+  } catch (e) {
+    console.error(e);
   }
 
   /**
    * カラー設定
    *
-   * @property {string} titleSvg - メインカラーのカラーコード文字列
+   * @property {string} mainColor - メインカラーのカラーコード文字列
    * @property {string} subColor - サブカラーのカラーコード文字列
    */
   const defaultColors = {
@@ -43,22 +50,69 @@ export function embedClinicMap({ parentSelector, clinicType, colors = {} }) {
    * @property {string} titleSvg - タイトル用SVGの文字列
    * @property {string} mapSvg - 地図用SVGの文字列
    * @property {Object} clinicDetails - 医院詳細情報のJSONデータ
-   * @property {boolean} isVisibleTitle - タイトルを埋め込む要素の存在有無のフラグ
-   * @property {boolean} isVisibleMap - 地図を埋め込む要素の存在有無のフラグ
-   * @property {boolean} isVisibleDetailsAccordion - 詳細アコーディオンを埋め込む要素の存在有無のフラグ
+   * @property {boolean} hasTitle - タイトルを埋め込む要素の存在有無のフラグ
+   * @property {boolean} hasMap - 地図を埋め込む要素の存在有無のフラグ
+   * @property {boolean} hasDetailsAccordion - 詳細アコーディオンを埋め込む要素の存在有無のフラグ
    */
   const state = {
+    fetchPath: clinicType.replace(/-/g, '/'), // 例：juno-1 → juno/1
     titleSvg: '',
     mapSvg: '',
     clinicDetails: {},
-    isVisibleTitle: !!document.querySelector(
-      `${parentSelector} [data-cl-title]`
-    ),
-    isVisibleMap: !!document.querySelector(`${parentSelector} [data-cl-map]`),
-    isVisibleDetailsAccordion: !!document.querySelector(
+    hasTitle: !!document.querySelector(`${parentSelector} [data-cl-title]`),
+    hasMap: !!document.querySelector(`${parentSelector} [data-cl-map]`),
+    hasDetailsAccordion: !!document.querySelector(
       `${parentSelector} [data-cl-details-accordion]`
     ),
   };
+
+  /**
+   * インスタンス引数のバリデーション処理
+   * @param {object} params
+   * @param {string} params.parentSelector - カレンダーを埋め込む親要素のIDセレクタ
+   * @param {string} params.checkBoxAttrName - 日時のチェックボックスのname属性名
+   * @param {object} [params.options] - オプション設定
+   */
+  function validateArgument({
+    parentSelector,
+    clinicType,
+    showClinicDetails,
+    colors,
+  }) {
+    // ──────── 親要素セレクタ ────────
+    if (!parentSelector) {
+      throw new Error('"parentSelector" and "clinicType" is required.');
+    } else {
+      const isIdSelector = parentSelector.trim().startsWith('#');
+      if (!isIdSelector) {
+        throw new Error('Please specify an ID selector.');
+      }
+    }
+
+    // ──────── クリニックタイプ ────────
+    if (clinicType !== undefined && typeof clinicType !== 'string') {
+      throw new Error('"clinicType" must be a string.');
+    }
+
+    // ──────── クリニック詳細の表示フラグ ────────
+    if (
+      showClinicDetails !== undefined &&
+      typeof showClinicDetails !== 'boolean'
+    ) {
+      throw new Error('"showClinicDetails" must be a boolean.');
+    }
+
+    // ──────── カラー設定 ────────
+    const { mainColor, subColor } = colors;
+
+    if (mainColor !== undefined && typeof mainColor !== 'string') {
+      throw new Error('"mainColor" must be a string.');
+    }
+
+    if (subColor !== undefined && typeof subColor !== 'string') {
+      throw new Error('"subColor" must be a string.');
+    }
+  }
 
   /**
    * 引数のfetchのレスポンスの Content-Type が、引数で指定したタイプかを判定
@@ -102,7 +156,7 @@ export function embedClinicMap({ parentSelector, clinicType, colors = {} }) {
     const parser = new DOMParser();
 
     // タイトルSVG
-    if (state.isVisibleTitle && state.titleSvg) {
+    if (state.hasTitle && state.titleSvg) {
       const titleEl = document.querySelector(
         `${parentSelector} [data-cl-title]`
       );
@@ -119,7 +173,7 @@ export function embedClinicMap({ parentSelector, clinicType, colors = {} }) {
     }
 
     // 地図SVG
-    if (state.isVisibleMap && state.isVisibleMap) {
+    if (state.hasMap && state.mapSvg) {
       const mapEl = document.querySelector(`${parentSelector} [data-cl-map]`);
 
       if (state.mapSvg) {
@@ -134,7 +188,11 @@ export function embedClinicMap({ parentSelector, clinicType, colors = {} }) {
     }
 
     // 院詳細アコーディオン
-    if (state.isVisibleDetailsAccordion && state.clinicDetails.length > 0) {
+    if (
+      showClinicDetails &&
+      state.hasDetailsAccordion &&
+      state.clinicDetails.length > 0
+    ) {
       const detailsAccordionElement = document.querySelector(
         `${parentSelector} [data-cl-details-accordion]`
       );
@@ -252,7 +310,7 @@ export function embedClinicMap({ parentSelector, clinicType, colors = {} }) {
       ${parentSelector} .cl-details-acd__list-item-header {
         display: block;
         padding: 1.5rem 1.2rem;
-        border-radius: 10px;
+        border-radius: .5rem;
         position: relative;
         color: #111;
         text-align: center;
@@ -360,7 +418,7 @@ export function embedClinicMap({ parentSelector, clinicType, colors = {} }) {
   /**
    * タイトルと地図SVG、医院詳細JSONを並列でfetchして、state に格納する非同期処理
    *
-   * - 各データは表示するかのフラグ（isVisibleTitle / isVisibleMap / isVisibleDetailsAccordion）にもとづき処理する
+   * - 各データは表示するかのフラグ（hasTitle / hasMap / hasDetailsAccordion）にもとづき処理する
    * - fetchに失敗しても他のfetch処理は継続する
    * - Content-Typeをチェックし、正しい形式のレスポンスのみstateに保存
    *
@@ -375,21 +433,24 @@ export function embedClinicMap({ parentSelector, clinicType, colors = {} }) {
     };
 
     // タイトルSVGのfetch先URL
-    if (state.isVisibleTitle) {
-      const url = new URL(`../images/title.svg`, import.meta.url);
+    if (state.hasTitle) {
+      const url = new URL(`../data/common/title.svg`, import.meta.url);
       promises.title = fetchData(url);
     }
 
     // 地図SVGのfetch先URL
-    if (state.isVisibleMap) {
-      const url = new URL(`../images/${clinicType}/map.svg`, import.meta.url);
+    if (state.hasMap) {
+      const url = new URL(
+        `../data/${state.fetchPath}/map.svg`,
+        import.meta.url
+      );
       promises.map = fetchData(url);
     }
 
     // 院情報詳細JSONのfetch先URL
-    if (state.isVisibleDetailsAccordion) {
+    if (state.hasDetailsAccordion) {
       const url = new URL(
-        `../data/${clinicType}/clinic-details.json`,
+        `../data/${state.fetchPath}/clinic-details.json`,
         import.meta.url
       );
       promises.details = fetchData(url);
