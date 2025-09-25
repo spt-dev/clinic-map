@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     const embedClinicMapInstance1 = embedClinicMap({
       parentSelector: '#clinic-list-1',
       clinicType: 'juno-1',
-      showClinicDetails: true,
       colors: { mainColor: '#fd7ea5', subColor: '#ffdee8' },
     });
     embedClinicMapInstance1.init();
@@ -18,7 +17,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     const embedClinicMapInstance2 = embedClinicMap({
       parentSelector: '#clinic-list-2',
       clinicType: 'juno-2',
-      showClinicDetails: true,
       colors: { mainColor: '#79b169ff', subColor: '#edffdeff' },
     });
     embedClinicMapInstance2.init();
