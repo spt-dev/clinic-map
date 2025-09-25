@@ -8,18 +8,12 @@
  * @param {string} [params.colors.mainColor]
  * @param {string} [params.colors.subColor]
  */
-export function embedClinicMap({
-  parentSelector,
-  clinicType,
-  showClinicDetails = false,
-  colors = {},
-}) {
+export function embedClinicMap({ parentSelector, clinicType, colors = {} }) {
   // ──────────────── 引数バリデーション ────────────────
   try {
     validateArgument({
       parentSelector,
       clinicType,
-      showClinicDetails,
       colors,
     });
   } catch (e) {
@@ -73,12 +67,7 @@ export function embedClinicMap({
    * @param {string} params.checkBoxAttrName - 日時のチェックボックスのname属性名
    * @param {object} [params.options] - オプション設定
    */
-  function validateArgument({
-    parentSelector,
-    clinicType,
-    showClinicDetails,
-    colors,
-  }) {
+  function validateArgument({ parentSelector, clinicType, colors }) {
     // ──────── 親要素セレクタ ────────
     if (!parentSelector) {
       throw new Error('"parentSelector" and "clinicType" is required.');
@@ -92,14 +81,6 @@ export function embedClinicMap({
     // ──────── クリニックタイプ ────────
     if (clinicType !== undefined && typeof clinicType !== 'string') {
       throw new Error('"clinicType" must be a string.');
-    }
-
-    // ──────── クリニック詳細の表示フラグ ────────
-    if (
-      showClinicDetails !== undefined &&
-      typeof showClinicDetails !== 'boolean'
-    ) {
-      throw new Error('"showClinicDetails" must be a boolean.');
     }
 
     // ──────── カラー設定 ────────
@@ -188,11 +169,7 @@ export function embedClinicMap({
     }
 
     // 院詳細アコーディオン
-    if (
-      showClinicDetails &&
-      state.hasDetailsAccordion &&
-      state.clinicDetails.length > 0
-    ) {
+    if (state.hasDetailsAccordion && state.clinicDetails.length > 0) {
       const detailsAccordionElement = document.querySelector(
         `${parentSelector} [data-cl-details-accordion]`
       );
