@@ -230,10 +230,6 @@ export function embedClinicMap({ parentSelector, clinicType, colors = {} }) {
               <td>${clinic.closed ?? ''}</td>
             </tr>
             <tr>
-              <th>住所</th>
-              <td>${clinic.address ?? ''}</td>
-            </tr>
-            <tr>
               <th>最寄駅</th>
               <td>${clinic.stations ?? ''}</td>
             </tr>
@@ -346,6 +342,7 @@ export function embedClinicMap({ parentSelector, clinicType, colors = {} }) {
         font-size: 1.4rem;
       }
       ${parentSelector} .cl-details-acd__list-sub-item-table {
+        width: 100%;
         margin-bottom: 1rem;
         font-size: 1.2rem;
       }

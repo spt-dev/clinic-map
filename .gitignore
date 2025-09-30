@@ -1,0 +1,7 @@
+# OS関連
+.DS_Store
+Thumbs.db
+
+# IDE / エディタ関連
+.vscode/
+.idea/
