@@ -62,8 +62,5 @@ document.addEventListener('DOMContentLoaded', async () => {
     embedClinicMapInstance7.init();
   } catch (e) {
     console.error(e);
-  } finally {
-    console.log(2);
   }
-  console.log(1);
 });
