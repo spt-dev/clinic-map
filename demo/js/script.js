@@ -21,6 +21,22 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
     embedClinicMapInstance2.init();
 
+    // JUNO type3
+    const embedClinicMapInstance6 = embedClinicMap({
+      parentSelector: '#clinic-list-6',
+      clinicType: 'juno-3',
+      colors: { mainColor: '#ffc157', subColor: '#fff9deff' },
+    });
+    embedClinicMapInstance6.init();
+
+    // JUNO type4
+    const embedClinicMapInstance7 = embedClinicMap({
+      parentSelector: '#clinic-list-7',
+      clinicType: 'juno-4',
+      colors: { mainColor: '#6be080ff', subColor: '#deffdfff' },
+    });
+    embedClinicMapInstance7.init();
+
     // ATOM type1
     const embedClinicMapInstance3 = embedClinicMap({
       parentSelector: '#clinic-list-3',
