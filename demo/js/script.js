@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
     embedClinicMapInstance4.init();
 
-    // 【ATOM-1】AGA(男性)
+    // 【ATOM-1】泌尿器、ED
     const embedClinicMapInstance5 = embedClinicMap({
       parentSelector: '#clinic-list-5',
       clinicType: 'atom-1',
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
     embedClinicMapInstance5.init();
 
-    // 【ATOM-2】泌尿器、ED
+    // 【ATOM-2】AGA(男性)
     const embedClinicMapInstance6 = embedClinicMap({
       parentSelector: '#clinic-list-6',
       clinicType: 'atom-2',
