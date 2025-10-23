@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', async () => {
   try {
     const { embedClinicMap } = await import(
-      // 'https://cdn.jsdelivr.net/gh/spt-cdn/clinic-map@master/source/js/main.js'
+      // 'https://cdn.jsdelivr.net/gh/spt-dev/clinic-map@master/source/js/main.js'
       '../../source/js/main.js'
     );
 
