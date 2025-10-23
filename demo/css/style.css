@@ -120,8 +120,11 @@ select {
   text-align: center;
 }
 .sec-title {
-  padding: 1rem 0;
+  padding: 1rem;
   margin-top: 15rem;
   background-color: #f0f0f0;
   font-size: 2rem;
+}
+.sec-title span {
+  font-size: 1.5rem;
 }
