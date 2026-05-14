@@ -5,61 +5,57 @@ document.addEventListener('DOMContentLoaded', async () => {
       '../../source/js/main.js'
     );
 
-    // 【JUNO-1】二重・クマ・糸・小顔・女性泌尿器
+    // 【aga】
     const embedClinicMapInstance1 = embedClinicMap({
       parentSelector: '#clinic-list-1',
-      clinicType: 'juno-1',
-      colors: { mainColor: '#fd7ea5', subColor: '#ffdee8' },
+      clinicType: 'aga',
     });
     embedClinicMapInstance1.init();
 
-    // 【JUNO-2】スルリム
+     // 【ed】
     const embedClinicMapInstance2 = embedClinicMap({
       parentSelector: '#clinic-list-2',
-      clinicType: 'juno-2',
-      colors: { mainColor: '#79b169ff', subColor: '#edffdeff' },
+      clinicType: 'ed'
     });
     embedClinicMapInstance2.init();
 
-    // 【JUNO-3】冷却
+     // 【fat_cooling】
     const embedClinicMapInstance3 = embedClinicMap({
       parentSelector: '#clinic-list-3',
-      clinicType: 'juno-3',
-      colors: { mainColor: '#ffc157', subColor: '#fff9deff' },
+      clinicType: 'fat_cooling',
     });
     embedClinicMapInstance3.init();
 
-    // 【JUNO-4】AGA(女性)
+     // 【surgery】
     const embedClinicMapInstance4 = embedClinicMap({
       parentSelector: '#clinic-list-4',
-      clinicType: 'juno-4',
-      colors: { mainColor: '#6be080ff', subColor: '#deffdfff' },
+      clinicType: 'surgery',
     });
     embedClinicMapInstance4.init();
 
-    // 【ATOM-1】泌尿器、ED
+     // 【sururimu】
     const embedClinicMapInstance5 = embedClinicMap({
       parentSelector: '#clinic-list-5',
-      clinicType: 'atom-1',
-      colors: { mainColor: '#7eb8fd', subColor: '#cee5ff' },
+      clinicType: 'sururimu',
     });
     embedClinicMapInstance5.init();
 
-    // 【ATOM-2】AGA(男性)
+     // 【urology】
     const embedClinicMapInstance6 = embedClinicMap({
       parentSelector: '#clinic-list-6',
-      clinicType: 'atom-2',
-      colors: { mainColor: '#7e7efdff', subColor: '#ced0ffff' },
+      clinicType: 'urology',
+      areaColors: [
+        '#ff84afff', // 北海道・東北
+        '#9ecdffff', // 東京
+        '#7a84ffff', // 関東
+        '#75e0e2ff', // 中部
+        '#e2e25aff', // 近畿
+        '#ec8383ff', // 中国・四国
+        '#76d3a6ff' // 九州・沖縄
+      ],
     });
     embedClinicMapInstance6.init();
-
-    // 【BeYOU-1】
-    const embedClinicMapInstance7 = embedClinicMap({
-      parentSelector: '#clinic-list-7',
-      clinicType: 'beyou-1',
-      colors: { mainColor: '#dfce6aff', subColor: '#fff8ceff' },
-    });
-    embedClinicMapInstance7.init();
+    
   } catch (e) {
     console.error(e);
   }
