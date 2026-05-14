@@ -49,19 +49,19 @@ export function embedClinicMap({ parentSelector, clinicType, areaColors = [] }) 
    * @returns {object}
    */
   const formatAreaColors = (colors) => {
-    if (!Array.isArray(colors)) return {};
+    // 未指定 / 空配列なら defaultAreaColors にフォールバック
+    if (!Array.isArray(colors) || colors.length === 0) return {};
 
     // CSSインジェクション対策：HEXカラー形式（#RGB / #RGBA / #RRGGBB / #RRGGBBAA）のみ許可
     const COLOR_RE = /^#([0-9a-fA-F]{3}|[0-9a-fA-F]{4}|[0-9a-fA-F]{6}|[0-9a-fA-F]{8})$/;
+    const FALLBACK_COLOR = '#ccc';
 
     const formattedColors = {};
-    colors.forEach((color, index) => {
-      const areaId = index + 1; // index 0 を ID 1 に対応
-      // 1〜7のIDのみを対象とし、不足分・超過分は無視する
-      if (areaId >= 1 && areaId <= 7 && color && COLOR_RE.test(color)) {
-        formattedColors[areaId] = color;
-      }
-    });
+    // areaColors が指定された場合、ID 1〜7 を全て埋める（不正・空・不足は #ccc）
+    for (let areaId = 1; areaId <= 7; areaId++) {
+      const color = colors[areaId - 1];
+      formattedColors[areaId] = (color && COLOR_RE.test(color)) ? color : FALLBACK_COLOR;
+    }
 
     return formattedColors;
   };
@@ -417,10 +417,13 @@ export function embedClinicMap({ parentSelector, clinicType, areaColors = [] }) 
         font-size: 2rem;
         font-weight: 600;
         line-height: 1.2;
-        letter-spacing: 3px;
+        letter-spacing: 2px;
       }
       ${parentSelector} .cl-title__sub span {
         font-size: 4.5rem;
+        margin: 0 .2rem;
+        display: inline-block;
+        transform: translateY(.2rem);
       }
       /* 地図 */
       ${parentSelector} .cl-map {
