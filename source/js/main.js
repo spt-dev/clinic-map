@@ -22,6 +22,17 @@ export function embedClinicMap({ parentSelector, clinicType, areaColors = [] }) 
   }
 
   /**
+   * 性別ラベル定義
+   * 
+   * @property {string} 1 - 男性専用
+   * @property {string} 2 - 女性専用
+   */
+  const GENDER_LABELS = {
+    1: '男性専用',
+    2: '女性専用',
+  };
+
+  /**
    * カラー設定
    *
    * @property {string} 1 - 北海道・東北のカラーコード文字列
@@ -355,6 +366,7 @@ export function embedClinicMap({ parentSelector, clinicType, areaColors = [] }) 
           <div class="cl-details-acd__list-sub-item-header">
             ${escapeHtml(clinic.clinic_name)}
             ${clinic.is_partner ? "（提携院）" : ""}
+            ${GENDER_LABELS[clinic.gender_id] ? `<span class='cl-details-acd__list-sub-item-header-label'>${GENDER_LABELS[clinic.gender_id]}</span>` : ''}
           </div>
           <table class="cl-details-acd__list-sub-item-table">
             <tr>
@@ -596,6 +608,10 @@ export function embedClinicMap({ parentSelector, clinicType, areaColors = [] }) 
         margin-bottom: 1.5em;
       }
       ${parentSelector} .cl-details-acd__list-sub-item-header {
+        display: flex;
+        justify-content: center;
+        gap: .7rem;
+        align-items: center;
         padding: .8rem 0;
         margin-bottom: 1rem;
         background-color: #efefef;
@@ -603,6 +619,12 @@ export function embedClinicMap({ parentSelector, clinicType, areaColors = [] }) 
         text-align: center;
         font-size: 1.4rem;
         font-weight: bold;
+      }
+      ${parentSelector} .cl-details-acd__list-sub-item-header-label {
+        padding: .1rem .5rem;
+        background-color: #fff;
+        font-size: 1rem;
+        border-radius: .2rem;
       }
       ${parentSelector} .cl-details-acd__list-sub-item-table {
         width: 100%;
@@ -660,7 +682,7 @@ export function embedClinicMap({ parentSelector, clinicType, areaColors = [] }) 
    * - fetchに失敗しても他のfetch処理は継続する
    * - Content-Typeをチェックし、正しい形式のレスポンスのみstateに保存
    *
-   * @returns {void}
+   * @returns {Promise<void>}
    */
 
   const fetchAllWithSetData = async () => {

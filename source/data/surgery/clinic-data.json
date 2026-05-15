@@ -6,6 +6,7 @@
       {
         "clinic_id": 2,
         "clinic_name": "札幌店",
+        "gender_id": "0",
         "sort_num": 2,
         "is_partner": 0,
         "address": "北海道札幌市中央区南1条西2-18 ikeuchi gate 5階",
@@ -18,6 +19,7 @@
       {
         "clinic_id": 4,
         "clinic_name": "仙台店",
+        "gender_id": "0",
         "sort_num": 6,
         "is_partner": 0,
         "address": "宮城県仙台市青葉区花京院1-2-15 ソララプラザ 1階",
@@ -30,6 +32,7 @@
       {
         "clinic_id": 5,
         "clinic_name": "福島店",
+        "gender_id": "0",
         "sort_num": 7,
         "is_partner": 0,
         "address": "福島県郡山市中町11-1 セントラルアベニュー郡山Ⅰビル 5階",
@@ -48,6 +51,7 @@
       {
         "clinic_id": 17,
         "clinic_name": "新宿店",
+        "gender_id": "1",
         "sort_num": 8,
         "is_partner": 0,
         "address": "東京都新宿区西新宿7-10-7 加賀谷ビル 7階・5階",
@@ -60,6 +64,7 @@
       {
         "clinic_id": 20,
         "clinic_name": "渋谷店",
+        "gender_id": "0",
         "sort_num": 11,
         "is_partner": 0,
         "address": "東京都渋谷区道玄坂2-23-12 フォンティスビル 8階",
@@ -72,6 +77,7 @@
       {
         "clinic_id": 21,
         "clinic_name": "表参道店",
+        "gender_id": "2",
         "sort_num": 13,
         "is_partner": 0,
         "address": "東京都港区南青山5-6-6　ARISTO南青山Ⅲ 2階",
@@ -90,6 +96,7 @@
       {
         "clinic_id": 6,
         "clinic_name": "宇都宮店",
+        "gender_id": "0",
         "sort_num": 25,
         "is_partner": 0,
         "address": "栃木県宇都宮市池上町4-23 外山ビル 4階",
@@ -102,6 +109,7 @@
       {
         "clinic_id": 24,
         "clinic_name": "川崎店",
+        "gender_id": "0",
         "sort_num": 36,
         "is_partner": 0,
         "address": "神奈川県川崎市川崎区駅前本町5-1 美光ビル 4階",
@@ -114,6 +122,7 @@
       {
         "clinic_id": 27,
         "clinic_name": "横浜駅前店",
+        "gender_id": "2",
         "sort_num": 39,
         "is_partner": 0,
         "address": "神奈川県横浜市西区北幸1丁目8-2 犬山西口ビルヂング 6階",
@@ -132,6 +141,7 @@
       {
         "clinic_id": 30,
         "clinic_name": "静岡店",
+        "gender_id": "0",
         "sort_num": 47,
         "is_partner": 0,
         "address": "静岡県静岡市葵区追手町7-1COMOTEビル 2階",
@@ -144,6 +154,7 @@
       {
         "clinic_id": 31,
         "clinic_name": "浜松店",
+        "gender_id": "0",
         "sort_num": 48,
         "is_partner": 0,
         "address": "静岡県浜松市中央区鍛冶町140-2 出雲殿互助会駅前ビル 6階",
@@ -156,6 +167,7 @@
       {
         "clinic_id": 33,
         "clinic_name": "名古屋店",
+        "gender_id": "2",
         "sort_num": 50,
         "is_partner": 0,
         "address": "愛知県名古屋市中村区名駅3-25-3 大橋ビルディング 3階",
@@ -168,6 +180,7 @@
       {
         "clinic_id": 66,
         "clinic_name": "栄店",
+        "gender_id": "2",
         "sort_num": 51,
         "is_partner": 0,
         "address": "愛知県名古屋市中区錦3-24-24 錦324ビル 6階",
@@ -186,6 +199,7 @@
       {
         "clinic_id": 34,
         "clinic_name": "京都店",
+        "gender_id": "0",
         "sort_num": 53,
         "is_partner": 0,
         "address": "京都府京都市下京区立売西町68-2 四条烏丸セントラルビル 3階",
@@ -198,6 +212,7 @@
       {
         "clinic_id": 35,
         "clinic_name": "梅田店",
+        "gender_id": "0",
         "sort_num": 54,
         "is_partner": 0,
         "address": "大阪府大阪市北区曾根崎2-12-4 コフレ梅田 1階",
@@ -210,6 +225,7 @@
       {
         "clinic_id": 37,
         "clinic_name": "心斎橋店",
+        "gender_id": "0",
         "sort_num": 57,
         "is_partner": 0,
         "address": "\n大阪府大阪市中央区南船場3-6-18 ケーズビル 10階",
@@ -222,6 +238,7 @@
       {
         "clinic_id": 38,
         "clinic_name": "三宮店",
+        "gender_id": "0",
         "sort_num": 61,
         "is_partner": 0,
         "address": "兵庫県神戸市中央区三宮町1-4-8 メットライフ神戸三宮ビル 2階",
@@ -240,6 +257,7 @@
       {
         "clinic_id": 39,
         "clinic_name": "広島店",
+        "gender_id": "0",
         "sort_num": 64,
         "is_partner": 0,
         "address": "広島県広島市中区紙屋町1-1-1 東和ビル 6階",
@@ -252,6 +270,7 @@
       {
         "clinic_id": 41,
         "clinic_name": "高松店",
+        "gender_id": "0",
         "sort_num": 67,
         "is_partner": 0,
         "address": "香川県高松市兵庫町8-1 高松兵庫町ビルディング 1階",
@@ -264,6 +283,7 @@
       {
         "clinic_id": 74,
         "clinic_name": "岡山店",
+        "gender_id": "0",
         "sort_num": 60,
         "is_partner": 0,
         "address": "岡山県岡山市北区大供2-1-1 ハスパリ大供ビル 2階",
@@ -282,6 +302,7 @@
       {
         "clinic_id": 44,
         "clinic_name": "天神南店",
+        "gender_id": "2",
         "sort_num": 71,
         "is_partner": 0,
         "address": "福岡県福岡市中央区渡辺通5-24-32 FPGリンクス天神南 4階",
@@ -294,6 +315,7 @@
       {
         "clinic_id": 46,
         "clinic_name": "熊本店",
+        "gender_id": "0",
         "sort_num": 77,
         "is_partner": 0,
         "address": "熊本県熊本市中央区草葉町2-33 A&M草葉ビル 2階",
@@ -306,6 +328,7 @@
       {
         "clinic_id": 47,
         "clinic_name": "鹿児島店",
+        "gender_id": "0",
         "sort_num": 79,
         "is_partner": 0,
         "address": "鹿児島県鹿児島市金生町6-10 キューブ鹿児島金生町 3階",
@@ -318,6 +341,7 @@
       {
         "clinic_id": 48,
         "clinic_name": "那覇店",
+        "gender_id": "0",
         "sort_num": 81,
         "is_partner": 0,
         "address": "沖縄県那覇市銘苅2-2-9 アイリスビル 3階",
