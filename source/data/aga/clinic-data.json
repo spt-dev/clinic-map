@@ -17,6 +17,19 @@
         }
       },
       {
+        "clinic_id": 3,
+        "clinic_name": "青森店",
+        "gender_id": "0",
+        "sort_num": 4,
+        "is_partner": 0,
+        "address": "青森県青森市新町2-1−11 ESTビル 5階",
+        "full": "明の星通り線「県庁通り（バス）」徒歩2分",
+        "hours": {
+          "business_start": "9:00",
+          "business_end": "19:00"
+        }
+      },
+      {
         "clinic_id": 4,
         "clinic_name": "仙台店",
         "gender_id": "0",
@@ -114,13 +127,13 @@
         }
       },
       {
-        "clinic_id": 17,
+        "clinic_id": 18,
         "clinic_name": "新宿店",
-        "gender_id": "1",
-        "sort_num": 8,
+        "gender_id": "0",
+        "sort_num": 9,
         "is_partner": 0,
-        "address": "東京都新宿区西新宿7-10-7 加賀谷ビル 7階・5階",
-        "full": "JR「新宿駅」徒歩5分\n都営地下鉄大江戸線「新宿西口駅」徒歩1分\n西武鉄道「西武新宿駅」徒歩2分\n丸ノ内線「西新宿駅」徒歩5分",
+        "address": "東京都新宿区新宿3-17−1いさみやビル 4階",
+        "full": "JR「新宿駅」徒歩5分\n副都心線「新宿三丁目駅」徒歩1分",
         "hours": {
           "business_start": "9:00",
           "business_end": "20:00"
@@ -168,7 +181,7 @@
       {
         "clinic_id": 51,
         "clinic_name": "銀座店",
-        "gender_id": "1",
+        "gender_id": "2",
         "sort_num": 16,
         "is_partner": 1,
         "address": "東京都中央区銀座4-2-2 第1弥生ビル 4階",
@@ -276,6 +289,45 @@
         }
       },
       {
+        "clinic_id": 10,
+        "clinic_name": "千葉店",
+        "gender_id": "0",
+        "sort_num": 33,
+        "is_partner": 0,
+        "address": "千葉県千葉市中央区富士見2-8-1エキニア千葉 6階",
+        "full": "JR総武本線「千葉駅」徒歩11分\n京成千葉線「京成千葉駅」徒歩7分",
+        "hours": {
+          "business_start": "9:00",
+          "business_end": "19:00"
+        }
+      },
+      {
+        "clinic_id": 11,
+        "clinic_name": "柏店",
+        "gender_id": "0",
+        "sort_num": 34,
+        "is_partner": 0,
+        "address": "千葉県柏市柏2丁目5-3 マルマンビル 3階",
+        "full": "JR常磐線「柏駅」徒歩2分",
+        "hours": {
+          "business_start": "9:00",
+          "business_end": "19:00"
+        }
+      },
+      {
+        "clinic_id": 12,
+        "clinic_name": "松戸店",
+        "gender_id": "0",
+        "sort_num": 35,
+        "is_partner": 0,
+        "address": "千葉県松戸市松戸1307-1 キテミテマツド 8階",
+        "full": "JR常磐線/新京成線「松戸駅」徒歩約3分",
+        "hours": {
+          "business_start": "9:00",
+          "business_end": "19:00"
+        }
+      },
+      {
         "clinic_id": 24,
         "clinic_name": "川崎店",
         "gender_id": "0",
@@ -286,19 +338,6 @@
         "hours": {
           "business_start": "9:00",
           "business_end": "19:00"
-        }
-      },
-      {
-        "clinic_id": 26,
-        "clinic_name": "横浜（第7NYビル）店",
-        "gender_id": "2",
-        "sort_num": 38,
-        "is_partner": 0,
-        "address": "神奈川県横浜市西区北幸2丁目13-20第7NYビル 3階・4階",
-        "full": "市営地下鉄「横浜駅」徒歩6分\nJR「横浜駅」徒歩11分",
-        "hours": {
-          "business_start": "9:00",
-          "business_end": "20:00"
         }
       },
       {
@@ -460,19 +499,6 @@
         "full": "「名古屋駅」徒歩4分\n桜通線「国際センター駅」徒歩4分",
         "hours": {
           "business_start": "9:00",
-          "business_end": "20:00"
-        }
-      },
-      {
-        "clinic_id": 57,
-        "clinic_name": "金沢店",
-        "gender_id": "0",
-        "sort_num": 44,
-        "is_partner": 1,
-        "address": "石川県金沢市堀川新町2-48 サンファーストビル 4階",
-        "full": "JR「金沢駅」東口徒歩2分\n北陸鉄道「北鉄金沢駅」徒歩1分",
-        "hours": {
-          "business_start": "10:00",
           "business_end": "20:00"
         }
       },
@@ -665,6 +691,19 @@
         "is_partner": 0,
         "address": "香川県高松市兵庫町8-1 高松兵庫町ビルディング 1階",
         "full": "高松琴平電気鉄道琴平線「高松築港駅」徒歩8分\nJR予讃線「高松駅」徒歩8分",
+        "hours": {
+          "business_start": "9:00",
+          "business_end": "19:00"
+        }
+      },
+      {
+        "clinic_id": 42,
+        "clinic_name": "松山店",
+        "gender_id": "0",
+        "sort_num": 68,
+        "is_partner": 0,
+        "address": "愛媛県松山市三番町4-9-10 ISビル 3階",
+        "full": "伊予鉄道高浜線「松山市駅」徒歩7分",
         "hours": {
           "business_start": "9:00",
           "business_end": "19:00"

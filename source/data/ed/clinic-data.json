@@ -101,13 +101,13 @@
         }
       },
       {
-        "clinic_id": 18,
+        "clinic_id": 17,
         "clinic_name": "新宿店",
-        "gender_id": "2",
-        "sort_num": 9,
+        "gender_id": "0",
+        "sort_num": 8,
         "is_partner": 0,
-        "address": "東京都新宿区新宿3-17−1いさみやビル 4階",
-        "full": "JR「新宿駅」徒歩5分\n副都心線「新宿三丁目駅」徒歩1分",
+        "address": "東京都新宿区西新宿7-10-7 加賀谷ビル 7階・5階",
+        "full": "JR「新宿駅」徒歩5分\n都営地下鉄大江戸線「新宿西口駅」徒歩1分\n西武鉄道「西武新宿駅」徒歩2分\n丸ノ内線「西新宿駅」徒歩5分",
         "hours": {
           "business_start": "9:00",
           "business_end": "20:00"
@@ -621,7 +621,7 @@
       {
         "clinic_id": 42,
         "clinic_name": "松山店",
-        "gender_id": "1",
+        "gender_id": "0",
         "sort_num": 68,
         "is_partner": 0,
         "address": "愛媛県松山市三番町4-9-10 ISビル 3階",

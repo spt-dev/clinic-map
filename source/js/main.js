@@ -68,8 +68,8 @@ export function embedClinicMap({ parentSelector, clinicType, areaColors = [] }) 
     const FALLBACK_COLOR = '#ccc';
 
     const formattedColors = {};
-    // areaColors が指定された場合、ID 1〜7 を全て埋める（不正・空・不足は #ccc）
-    for (let areaId = 1; areaId <= 7; areaId++) {
+    // areaColors が指定された場合、ID を全て埋める（不正・空・不足は #ccc）
+    for (let areaId = 1; areaId <= Object.keys(defaultAreaColors).length; areaId++) {
       const color = colors[areaId - 1];
       formattedColors[areaId] = (color && COLOR_RE.test(color)) ? color : FALLBACK_COLOR;
     }
@@ -456,15 +456,16 @@ export function embedClinicMap({ parentSelector, clinicType, areaColors = [] }) 
         position:absolute;
         z-index: 10;
         color: #232323;
-        cursor:pointer;
         transition: all 0.2s;
+        ${state.hasDetailsAccordion ? 'cursor:pointer;' : 'pointer-events:none; cursor:default;'}
       }
+      ${state.hasDetailsAccordion ? `
       @media (hover: hover) {
         ${parentSelector} .cl-map__nav-item:hover {
           transform: scale(.95);
           transition: all 0.2s;
         }
-      }
+      }` : ``}
       ${parentSelector} .cl-map__nav-item-1 {
         top: 5.4rem;
         left: 12.4rem;
@@ -688,7 +689,7 @@ export function embedClinicMap({ parentSelector, clinicType, areaColors = [] }) 
   const fetchAllWithSetData = async () => {
 
     // 院情報詳細JSONのfetch先URL
-    if (state.hasDetailsAccordion) {
+    if (state.hasMap ||state.hasDetailsAccordion) {
       const url = new URL(
         `../data/${state.fetchPath}/clinic-data.json`,
         import.meta.url
