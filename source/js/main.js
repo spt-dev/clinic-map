@@ -68,8 +68,8 @@ export function embedClinicMap({ parentSelector, clinicType, areaColors = [] }) 
     const FALLBACK_COLOR = '#ccc';
 
     const formattedColors = {};
-    // areaColors が指定された場合、ID 1〜7 を全て埋める（不正・空・不足は #ccc）
-    for (let areaId = 1; areaId <= 7; areaId++) {
+    // areaColors が指定された場合、ID を全て埋める（不正・空・不足は #ccc）
+    for (let areaId = 1; areaId <= Object.keys(defaultAreaColors).length; areaId++) {
       const color = colors[areaId - 1];
       formattedColors[areaId] = (color && COLOR_RE.test(color)) ? color : FALLBACK_COLOR;
     }
