@@ -17,6 +17,19 @@
         }
       },
       {
+        "clinic_id": 3,
+        "clinic_name": "青森店",
+        "gender_id": "0",
+        "sort_num": 4,
+        "is_partner": 0,
+        "address": "青森県青森市新町2-1−11 ESTビル 5階",
+        "full": "明の星通り線「県庁通り（バス）」徒歩2分",
+        "hours": {
+          "business_start": "9:00",
+          "business_end": "19:00"
+        }
+      },
+      {
         "clinic_id": 4,
         "clinic_name": "仙台店",
         "gender_id": "0",
@@ -49,13 +62,13 @@
     "id": 2,
     "clinics": [
       {
-        "clinic_id": 17,
+        "clinic_id": 18,
         "clinic_name": "新宿店",
-        "gender_id": "1",
-        "sort_num": 8,
+        "gender_id": "0",
+        "sort_num": 9,
         "is_partner": 0,
-        "address": "東京都新宿区西新宿7-10-7 加賀谷ビル 7階・5階",
-        "full": "JR「新宿駅」徒歩5分\n都営地下鉄大江戸線「新宿西口駅」徒歩1分\n西武鉄道「西武新宿駅」徒歩2分\n丸ノ内線「西新宿駅」徒歩5分",
+        "address": "東京都新宿区新宿3-17−1いさみやビル 4階",
+        "full": "JR「新宿駅」徒歩5分\n副都心線「新宿三丁目駅」徒歩1分",
         "hours": {
           "business_start": "9:00",
           "business_end": "20:00"
