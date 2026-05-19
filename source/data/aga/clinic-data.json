@@ -168,7 +168,7 @@
       {
         "clinic_id": 23,
         "clinic_name": "新橋店",
-        "gender_id": "0",
+        "gender_id": "1",
         "sort_num": 16,
         "is_partner": 0,
         "address": "東京都港区新橋1-5-5 グランベル銀座ビルII 10階",
@@ -233,7 +233,7 @@
       {
         "clinic_id": 83,
         "clinic_name": "池袋店",
-        "gender_id": "2",
+        "gender_id": "0",
         "sort_num": 12,
         "is_partner": 0,
         "address": "東京都豊島区東池袋1丁目13-6 ロクマルゲート IKEBUKURO 11階",
