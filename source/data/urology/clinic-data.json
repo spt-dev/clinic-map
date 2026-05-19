@@ -116,7 +116,7 @@
       {
         "clinic_id": 23,
         "clinic_name": "新橋店",
-        "gender_id": "0",
+        "gender_id": "1",
         "sort_num": 16,
         "is_partner": 0,
         "address": "東京都港区新橋1-5-5 グランベル銀座ビルII 10階",
@@ -156,7 +156,7 @@
         "clinic_id": 84,
         "clinic_name": "錦糸町店",
         "gender_id": "1",
-        "sort_num": 20,
+        "sort_num": 37,
         "is_partner": 0,
         "address": "東京都墨田区江東橋4丁目22−4 ガーベラ錦糸町ビル2階",
         "full": "錦糸町駅より徒歩約3分",
