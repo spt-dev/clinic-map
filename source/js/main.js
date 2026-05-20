@@ -404,59 +404,70 @@ export function embedClinicMap({ parentSelector, clinicType, areaColors = [] }) 
    */
   const embedStyleTag = () => {
     const styles = `
+      ${parentSelector} {
+        --base-width: 375;
+        --max-width: 640;
+        --base-font-size: 10;
+
+        font-size: min(
+          calc((var(--base-font-size) / var(--base-width)) * 100vw),
+          calc((var(--base-font-size) / var(--base-width)) * var(--max-width) * 1px)
+        );
+      }
       /* タイトル */
       ${parentSelector} .cl-title {
         margin: 0;
-        padding-top: 1.5rem;
+        padding-top: 1.5em;
         color: #232323;
         text-align: center;
       }
       ${parentSelector} .cl-title__main {
-        font-size: 3rem;
+        font-size: 3em;
         font-weight: bold;
-        margin-bottom: 1.3rem;
+        margin-bottom: .4em;
       }
       ${parentSelector} .cl-title__note {
         background-color: #f4f4f4;
-        padding: .3rem 1rem;
+        padding: .2em .8em;
         display: inline-block;
-        border-radius: .5rem;
-        font-size: 1.5rem;
+        border-radius: .5em;
+        font-size: 1.5em;
         font-weight: 600;
         letter-spacing: 0;
       }
       ${parentSelector} .cl-title__sub {
-        font-size: 2rem;
+        font-size: 2em;
         font-weight: 600;
         line-height: 1.2;
         letter-spacing: 2px;
       }
       ${parentSelector} .cl-title__sub span {
-        font-size: 4.5rem;
-        margin: 0 .2rem;
+        font-size: 2.3em;
+        margin: 0 .05em;
         display: inline-block;
-        transform: translateY(.2rem);
+        transform: translateY(.05em);
       }
       /* 地図 */
       ${parentSelector} .cl-map {
         position:relative;
-        padding-bottom: 8rem;
+        padding-bottom: 8em;
       }
       ${parentSelector} .cl-map__nav-item {
         width: fit-content;
-        padding: .9rem 1.5rem .9rem 1rem;
+        padding: .9em 1.5em .9em 1em;
         line-height: 1.2;
         letter-spacing: 3px;
         display: flex;
         align-items: center;
-        gap: 1rem;
+        gap: 1em;
         background-color: #fff;
-        box-shadow: .1rem .1rem .6rem rgba(0, 0, 0, 0.15);
-        border-radius: .5rem;
+        box-shadow: .1em .1em .6em rgba(0, 0, 0, 0.15);
+        border-radius: .5em;
         position:absolute;
         z-index: 10;
         color: #232323;
         transition: all 0.2s;
+        text-decoration: none;
         ${state.hasDetailsAccordion ? 'cursor:pointer;' : 'pointer-events:none; cursor:default;'}
       }
       ${state.hasDetailsAccordion ? `
@@ -467,60 +478,60 @@ export function embedClinicMap({ parentSelector, clinicType, areaColors = [] }) 
         }
       }` : ``}
       ${parentSelector} .cl-map__nav-item-1 {
-        top: 5.4rem;
-        left: 12.4rem;
+        top: 14.5%;
+        left: 37.5%;
       }
       ${parentSelector} .cl-map__nav-item-1 svg {
         fill: ${mergedAreaColors[1]};
       }
       ${parentSelector} .cl-map__nav-item-2 {
-        top: 23rem;
-        left: 26rem;
+        top: 61%;
+        left: 75.5%;
       }
       ${parentSelector} .cl-map__nav-item-2 svg {
         fill: ${mergedAreaColors[2]};
       }
       ${parentSelector} .cl-map__nav-item-3 {
-        top: 27.9rem;
-        left: 23.5rem;
+        top: 73.5%;
+        left: 68.5%;
       }
       ${parentSelector} .cl-map__nav-item-3 svg {
         fill: ${mergedAreaColors[3]};
       }
       ${parentSelector} .cl-map__nav-item-4 {
-        top: 10.3rem;
-        left: 12.4rem;
+        top: 26.5%;
+        left: 37.5%;
       }
       ${parentSelector} .cl-map__nav-item-4 svg {
         fill: ${mergedAreaColors[4]};
       }
       ${parentSelector} .cl-map__nav-item-5 {
-        top: 27.9rem;
-        left: 14.5rem;
+        top: 73.5%;
+        left: 43.5%;
       }
       ${parentSelector} .cl-map__nav-item-5 svg {
         fill: ${mergedAreaColors[5]};
       }
       ${parentSelector} .cl-map__nav-item-6 {
-        top: 16.5rem;
-        left: 5.5rem;
+        top: 42.5%;
+        left: 15.5%;
       }
       ${parentSelector} .cl-map__nav-item-6 svg {
         fill: ${mergedAreaColors[6]};
       }
       ${parentSelector} .cl-map__nav-item-7 {
-        top: 30rem;
-        left: 0;
+        top: 80%;
+        left: 1%;
       }
       ${parentSelector} .cl-map__nav-item-7 svg {
         fill: ${mergedAreaColors[7]};
       }
       ${parentSelector} .cl-map__nav-item-pin {
-        width: 1.2rem;
-        height: 1.5rem;
+        width: 1.2em;
+        height: 1.5em;
       }
       ${parentSelector} .cl-map__nav-item-label {
-        font-size: 1.4rem;
+        font-size: 1.4em;
         font-weight: bold;
         line-height: 1.2;
         letter-spacing: 0;
@@ -550,12 +561,12 @@ export function embedClinicMap({ parentSelector, clinicType, areaColors = [] }) 
       /* 詳細アコーディオン */
       ${parentSelector} .cl-details-acd__list-item-header {
         display: block;
-        padding: 2rem .5rem;
-        border-radius: .5rem;
+        padding: 1.5em .5em;
+        border-radius: .5em;
         position: relative;
         color: #232323;
         text-align: left;
-        font-size: 1.4rem;
+        font-size: 1.4em;
         font-weight: bold;
       }
 
@@ -566,9 +577,9 @@ export function embedClinicMap({ parentSelector, clinicType, areaColors = [] }) 
         }
       }
       ${parentSelector} .cl-details-acd__list-item-icon {
-        width: 1.5rem;
-        height: 1.5rem;
-        padding: .3rem;
+        width: 1.2em;
+        height: 1.2em;
+        padding: .25em;
         border-radius: 50%;
         position: absolute;
         top: 50%;
@@ -578,8 +589,8 @@ export function embedClinicMap({ parentSelector, clinicType, areaColors = [] }) 
         background-color: #4e4e4e;
       }
       ${parentSelector} .cl-details-acd__list-item-icon::after {
-        width: .9rem;
-        height: .9rem;
+        width: .7em;
+        height: .7em;
         display: block;
         content: '';
         mask: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4gPHN2ZyBpZD0ibWRpLXBsdXMtbWludXMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDUwIDUwIj4gICA8cGF0aCBkPSJNMjEuNDQsMy42M3YxNy44MUgzLjYzdjcuMTJoMTcuODF2MTcuODFoNy4xMnYtMTcuODFoMTcuODF2LTcuMTJoLTE3LjgxVjMuNjNoLTcuMTIiLz4gPC9zdmc+) center / 100% auto no-repeat;
@@ -598,7 +609,7 @@ export function embedClinicMap({ parentSelector, clinicType, areaColors = [] }) 
       /* for when opened */
       ${parentSelector} .cl-details-acd__list-item-header:has(input[type='checkbox']:checked) + .cl-details-acd__list-item-body {
         height: auto;
-        padding: 1rem 0 0.5rem 0;
+        padding: 1em 0 0.5em 0;
         transition: padding 0.3s;
       }
       ${parentSelector} .cl-details-acd__list-item-header:has(input[type='checkbox']:checked) .cl-details-acd__list-item-icon::after {
@@ -611,30 +622,30 @@ export function embedClinicMap({ parentSelector, clinicType, areaColors = [] }) 
       ${parentSelector} .cl-details-acd__list-sub-item-header {
         display: flex;
         justify-content: center;
-        gap: .7rem;
+        gap: .7em;
         align-items: center;
-        padding: .8rem 0;
-        margin-bottom: 1rem;
+        padding: .6em 0;
+        margin-bottom: 1em;
         background-color: #efefef;
-        border-radius: .6rem;
+        border-radius: .6em;
         text-align: center;
-        font-size: 1.4rem;
+        font-size: 1.4em;
         font-weight: bold;
       }
       ${parentSelector} .cl-details-acd__list-sub-item-header-label {
-        padding: .1rem .5rem;
+        padding: .1em .5em;
         background-color: #fff;
-        font-size: 1rem;
-        border-radius: .2rem;
+        font-size: 1em;
+        border-radius: .2em;
       }
       ${parentSelector} .cl-details-acd__list-sub-item-table {
         width: 100%;
-        margin-bottom: 1rem;
-        font-size: 1.3rem;
+        margin-bottom: 1em;
+        font-size: 1.3em;
       }
       ${parentSelector} .cl-details-acd__list-sub-item-table th,
       ${parentSelector} .cl-details-acd__list-sub-item-table td {
-        padding: 0.3rem 0;
+        padding: 0.3em 0;
         text-align: left;
         font-weight: normal;
         vertical-align: top;
