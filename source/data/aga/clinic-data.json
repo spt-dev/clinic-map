@@ -663,6 +663,19 @@
           "business_start": "9:00",
           "business_end": "20:00"
         }
+      },
+      {
+        "clinic_id": 86,
+        "clinic_name": "枚方店",
+        "gender_id": "0",
+        "sort_num": 55,
+        "is_partner": 0,
+        "address": "大阪府枚方市大垣内町2-17-13 枚方洛元ビル3F",
+        "full": "宮之阪駅 徒歩6分\n枚方市駅 徒歩8分",
+        "hours": {
+          "business_start": "9:00",
+          "business_end": "20:00"
+        }
       }
     ]
   },
@@ -869,6 +882,19 @@
         "hours": {
           "business_start": "9:00",
           "business_end": "19:00"
+        }
+      },
+      {
+        "clinic_id": 87,
+        "clinic_name": "博多店",
+        "gender_id": "0",
+        "sort_num": 73,
+        "is_partner": 0,
+        "address": "福岡県博多区博多駅前3-10-14 FL BLD.1 4階",
+        "full": "博多駅 西13出口より徒歩8分",
+        "hours": {
+          "business_start": "9:00",
+          "business_end": "20:00"
         }
       }
     ]
