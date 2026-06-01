@@ -62,32 +62,6 @@
     "id": 2,
     "clinics": [
       {
-        "clinic_id": 13,
-        "clinic_name": "吉祥寺店",
-        "gender_id": "0",
-        "sort_num": 21,
-        "is_partner": 0,
-        "address": "東京都武蔵野市吉祥寺本町1-31-12第II大栄ビル 4階",
-        "full": "JR「吉祥寺駅」徒歩2分",
-        "hours": {
-          "business_start": "9:00",
-          "business_end": "19:00"
-        }
-      },
-      {
-        "clinic_id": 14,
-        "clinic_name": "錦糸町店",
-        "gender_id": "0",
-        "sort_num": 19,
-        "is_partner": 0,
-        "address": "東京都墨田区江東橋4-25-7 JUスカイタウン錦糸町 6階",
-        "full": "JR「錦糸町駅」徒歩5分",
-        "hours": {
-          "business_start": "9:00",
-          "business_end": "20:00"
-        }
-      },
-      {
         "clinic_id": 18,
         "clinic_name": "新宿店",
         "gender_id": "0",
@@ -114,6 +88,19 @@
         }
       },
       {
+        "clinic_id": 83,
+        "clinic_name": "池袋店",
+        "gender_id": "0",
+        "sort_num": 12,
+        "is_partner": 0,
+        "address": "東京都豊島区東池袋1丁目13-6 ロクマルゲート IKEBUKURO 11階",
+        "full": "JR山手線「池袋駅」東口徒歩5分\n東京メトロ丸ノ内線「池袋駅」東口徒歩5分\n西武池袋線「池袋駅」東口徒歩5分",
+        "hours": {
+          "business_start": "9:00",
+          "business_end": "20:00"
+        }
+      },
+      {
         "clinic_id": 21,
         "clinic_name": "表参道店",
         "gender_id": "0",
@@ -127,6 +114,32 @@
         }
       },
       {
+        "clinic_id": 14,
+        "clinic_name": "錦糸町店",
+        "gender_id": "0",
+        "sort_num": 19,
+        "is_partner": 0,
+        "address": "東京都墨田区江東橋4-25-7 JUスカイタウン錦糸町 6階",
+        "full": "JR「錦糸町駅」徒歩5分",
+        "hours": {
+          "business_start": "9:00",
+          "business_end": "20:00"
+        }
+      },
+      {
+        "clinic_id": 13,
+        "clinic_name": "吉祥寺店",
+        "gender_id": "0",
+        "sort_num": 21,
+        "is_partner": 0,
+        "address": "東京都武蔵野市吉祥寺本町1-31-12第II大栄ビル 4階",
+        "full": "JR「吉祥寺駅」徒歩2分",
+        "hours": {
+          "business_start": "9:00",
+          "business_end": "19:00"
+        }
+      },
+      {
         "clinic_id": 69,
         "clinic_name": "町田店",
         "gender_id": "0",
@@ -134,19 +147,6 @@
         "is_partner": 0,
         "address": "東京都町田市原町田6-3-3 町映ビル 6階　",
         "full": "小田急小田原線「町田駅」徒歩2分",
-        "hours": {
-          "business_start": "9:00",
-          "business_end": "20:00"
-        }
-      },
-      {
-        "clinic_id": 83,
-        "clinic_name": "池袋店",
-        "gender_id": "0",
-        "sort_num": 12,
-        "is_partner": 0,
-        "address": "東京都豊島区東池袋1丁目13-6 ロクマルゲート IKEBUKURO 11階",
-        "full": "JR山手線「池袋駅」東口徒歩5分\n東京メトロ丸ノ内線「池袋駅」東口徒歩5分\n西武池袋線「池袋駅」東口徒歩5分",
         "hours": {
           "business_start": "9:00",
           "business_end": "20:00"
@@ -198,6 +198,19 @@
         }
       },
       {
+        "clinic_id": 77,
+        "clinic_name": "川口店",
+        "gender_id": "0",
+        "sort_num": 33,
+        "is_partner": 0,
+        "address": "埼玉県川口市栄町３丁目５−１５α-アルファー川口 ３階",
+        "full": "JR川口駅 徒歩4分",
+        "hours": {
+          "business_start": "9:00",
+          "business_end": "19:00"
+        }
+      },
+      {
         "clinic_id": 24,
         "clinic_name": "川崎店",
         "gender_id": "0",
@@ -221,19 +234,6 @@
         "hours": {
           "business_start": "9:00",
           "business_end": "20:00"
-        }
-      },
-      {
-        "clinic_id": 77,
-        "clinic_name": "川口店",
-        "gender_id": "0",
-        "sort_num": 33,
-        "is_partner": 0,
-        "address": "埼玉県川口市栄町３丁目５−１５α-アルファー川口 ３階",
-        "full": "JR川口駅 徒歩4分",
-        "hours": {
-          "business_start": "9:00",
-          "business_end": "19:00"
         }
       }
     ]
@@ -266,6 +266,19 @@
         "hours": {
           "business_start": "9:00",
           "business_end": "19:00"
+        }
+      },
+      {
+        "clinic_id": 70,
+        "clinic_name": "長野店",
+        "gender_id": "0",
+        "sort_num": 47,
+        "is_partner": 0,
+        "address": "長野県長野市南長野南石堂町1325−3 ら•ごりんビル 6階",
+        "full": "JR「長野駅」徒歩1分",
+        "hours": {
+          "business_start": "9:00",
+          "business_end": "20:00"
         }
       },
       {
@@ -315,19 +328,6 @@
         "is_partner": 0,
         "address": "愛知県名古屋市中区錦3-24-24 錦324ビル 6階",
         "full": "名古屋地下鉄東山線「栄駅」徒歩1分",
-        "hours": {
-          "business_start": "9:00",
-          "business_end": "20:00"
-        }
-      },
-      {
-        "clinic_id": 70,
-        "clinic_name": "長野店",
-        "gender_id": "0",
-        "sort_num": 47,
-        "is_partner": 0,
-        "address": "長野県長野市南長野南石堂町1325−3 ら•ごりんビル 6階",
-        "full": "JR「長野駅」徒歩1分",
         "hours": {
           "business_start": "9:00",
           "business_end": "20:00"
@@ -398,6 +398,19 @@
     "id": 6,
     "clinics": [
       {
+        "clinic_id": 74,
+        "clinic_name": "岡山店",
+        "gender_id": "0",
+        "sort_num": 62,
+        "is_partner": 0,
+        "address": "岡山県岡山市北区大供2-1-1 ハスパリ大供ビル 2階",
+        "full": "JR「岡山駅」徒歩16分",
+        "hours": {
+          "business_start": "9:00",
+          "business_end": "19:00"
+        }
+      },
+      {
         "clinic_id": 39,
         "clinic_name": "広島店",
         "gender_id": "0",
@@ -418,19 +431,6 @@
         "is_partner": 0,
         "address": "香川県高松市兵庫町8-1 高松兵庫町ビルディング 1階",
         "full": "高松琴平電気鉄道琴平線「高松築港駅」徒歩8分\nJR予讃線「高松駅」徒歩8分",
-        "hours": {
-          "business_start": "9:00",
-          "business_end": "19:00"
-        }
-      },
-      {
-        "clinic_id": 74,
-        "clinic_name": "岡山店",
-        "gender_id": "0",
-        "sort_num": 62,
-        "is_partner": 0,
-        "address": "岡山県岡山市北区大供2-1-1 ハスパリ大供ビル 2階",
-        "full": "JR「岡山駅」徒歩16分",
         "hours": {
           "business_start": "9:00",
           "business_end": "19:00"

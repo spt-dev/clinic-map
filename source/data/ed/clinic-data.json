@@ -17,6 +17,19 @@
         }
       },
       {
+        "clinic_id": 49,
+        "clinic_name": "旭川店",
+        "gender_id": "0",
+        "sort_num": 3,
+        "is_partner": 1,
+        "address": "北海道旭川市1条通6-78-1 クリスタルビル 4階",
+        "full": "JR「旭川駅」徒歩5分",
+        "hours": {
+          "business_start": "10:00",
+          "business_end": "20:00"
+        }
+      },
+      {
         "clinic_id": 3,
         "clinic_name": "青森店",
         "gender_id": "0",
@@ -27,6 +40,19 @@
         "hours": {
           "business_start": "9:00",
           "business_end": "19:00"
+        }
+      },
+      {
+        "clinic_id": 50,
+        "clinic_name": "秋田店",
+        "gender_id": "0",
+        "sort_num": 5,
+        "is_partner": 1,
+        "address": "秋田県秋田市中通1丁目3-5 秋田キャッスルホテル 1階",
+        "full": "JR「秋田駅」徒歩7分",
+        "hours": {
+          "business_start": "10:00",
+          "business_end": "20:00"
         }
       },
       {
@@ -54,32 +80,6 @@
           "business_start": "9:00",
           "business_end": "19:00"
         }
-      },
-      {
-        "clinic_id": 49,
-        "clinic_name": "旭川店",
-        "gender_id": "0",
-        "sort_num": 3,
-        "is_partner": 1,
-        "address": "北海道旭川市1条通6-78-1 クリスタルビル 4階",
-        "full": "JR「旭川駅」徒歩5分",
-        "hours": {
-          "business_start": "10:00",
-          "business_end": "20:00"
-        }
-      },
-      {
-        "clinic_id": 50,
-        "clinic_name": "秋田店",
-        "gender_id": "0",
-        "sort_num": 5,
-        "is_partner": 1,
-        "address": "秋田県秋田市中通1丁目3-5 秋田キャッスルホテル 1階",
-        "full": "JR「秋田駅」徒歩7分",
-        "hours": {
-          "business_start": "10:00",
-          "business_end": "20:00"
-        }
       }
     ]
   },
@@ -87,19 +87,6 @@
     "area": "東京",
     "id": 2,
     "clinics": [
-      {
-        "clinic_id": 15,
-        "clinic_name": "池袋店",
-        "gender_id": "1",
-        "sort_num": 13,
-        "is_partner": 0,
-        "address": "東京都豊島区西池袋3丁目29−14一平ビル 4F",
-        "full": "JR「池袋駅」徒歩5分",
-        "hours": {
-          "business_start": "9:00",
-          "business_end": "20:00"
-        }
-      },
       {
         "clinic_id": 17,
         "clinic_name": "新宿店",
@@ -121,6 +108,19 @@
         "is_partner": 0,
         "address": "東京都渋谷区道玄坂2-23-12 フォンティスビル 8階",
         "full": "JR「渋谷駅」徒歩6分",
+        "hours": {
+          "business_start": "9:00",
+          "business_end": "20:00"
+        }
+      },
+      {
+        "clinic_id": 15,
+        "clinic_name": "池袋店",
+        "gender_id": "1",
+        "sort_num": 13,
+        "is_partner": 0,
+        "address": "東京都豊島区西池袋3丁目29−14一平ビル 4F",
+        "full": "JR「池袋駅」徒歩5分",
         "hours": {
           "business_start": "9:00",
           "business_end": "20:00"
@@ -237,6 +237,19 @@
         }
       },
       {
+        "clinic_id": 71,
+        "clinic_name": "水戸店",
+        "gender_id": "0",
+        "sort_num": 29,
+        "is_partner": 0,
+        "address": "茨城県水戸市宮町2-4-33 小林ビル 2階",
+        "full": "JR「水戸駅」徒歩5分",
+        "hours": {
+          "business_start": "9:00",
+          "business_end": "19:00"
+        }
+      },
+      {
         "clinic_id": 9,
         "clinic_name": "大宮店",
         "gender_id": "0",
@@ -244,6 +257,45 @@
         "is_partner": 0,
         "address": "埼玉県さいたま市大宮区大門町1-1-1 エキニア大宮 3階",
         "full": "JR「大宮駅」徒歩5分",
+        "hours": {
+          "business_start": "9:00",
+          "business_end": "19:00"
+        }
+      },
+      {
+        "clinic_id": 80,
+        "clinic_name": "浦和店",
+        "gender_id": "0",
+        "sort_num": 32,
+        "is_partner": 0,
+        "address": "埼玉県さいたま市浦和区高砂2-6-3  ファーストセンタービル 4F",
+        "full": "JR浦和駅 徒歩5分",
+        "hours": {
+          "business_start": "9:00",
+          "business_end": "19:00"
+        }
+      },
+      {
+        "clinic_id": 77,
+        "clinic_name": "川口店",
+        "gender_id": "0",
+        "sort_num": 33,
+        "is_partner": 0,
+        "address": "埼玉県川口市栄町３丁目５−１５α-アルファー川口 ３階",
+        "full": "JR川口駅 徒歩4分",
+        "hours": {
+          "business_start": "9:00",
+          "business_end": "19:00"
+        }
+      },
+      {
+        "clinic_id": 76,
+        "clinic_name": "川越店",
+        "gender_id": "0",
+        "sort_num": 34,
+        "is_partner": 0,
+        "address": "埼玉県川越市脇田本町1-3グランベル川越5階",
+        "full": "JR川越駅 徒歩1分",
         "hours": {
           "business_start": "9:00",
           "business_end": "19:00"
@@ -315,19 +367,6 @@
         }
       },
       {
-        "clinic_id": 71,
-        "clinic_name": "水戸店",
-        "gender_id": "0",
-        "sort_num": 29,
-        "is_partner": 0,
-        "address": "茨城県水戸市宮町2-4-33 小林ビル 2階",
-        "full": "JR「水戸駅」徒歩5分",
-        "hours": {
-          "business_start": "9:00",
-          "business_end": "19:00"
-        }
-      },
-      {
         "clinic_id": 75,
         "clinic_name": "藤沢店",
         "gender_id": "0",
@@ -341,42 +380,16 @@
         }
       },
       {
-        "clinic_id": 76,
-        "clinic_name": "川越店",
+        "clinic_id": 88,
+        "clinic_name": "越谷店",
         "gender_id": "0",
-        "sort_num": 34,
+        "sort_num": 17,
         "is_partner": 0,
-        "address": "埼玉県川越市脇田本町1-3グランベル川越5階",
-        "full": "JR川越駅 徒歩1分",
+        "address": "埼玉県越谷市南越谷1-20-6 高木ビル4F",
+        "full": "JR 南越谷駅 徒歩3分\n新越谷駅　徒歩3分",
         "hours": {
           "business_start": "9:00",
-          "business_end": "19:00"
-        }
-      },
-      {
-        "clinic_id": 77,
-        "clinic_name": "川口店",
-        "gender_id": "0",
-        "sort_num": 33,
-        "is_partner": 0,
-        "address": "埼玉県川口市栄町３丁目５−１５α-アルファー川口 ３階",
-        "full": "JR川口駅 徒歩4分",
-        "hours": {
-          "business_start": "9:00",
-          "business_end": "19:00"
-        }
-      },
-      {
-        "clinic_id": 80,
-        "clinic_name": "浦和店",
-        "gender_id": "0",
-        "sort_num": 32,
-        "is_partner": 0,
-        "address": "埼玉県さいたま市浦和区高砂2-6-3  ファーストセンタービル 4F",
-        "full": "JR浦和駅 徒歩5分",
-        "hours": {
-          "business_start": "9:00",
-          "business_end": "19:00"
+          "business_end": "20:00"
         }
       }
     ]
@@ -406,6 +419,32 @@
         "is_partner": 0,
         "address": "石川県金沢市此花町3-2 ライブ1ビル 2階",
         "full": "JR「金沢駅」徒歩5分\n北陸鉄道「北鉄金沢駅」徒歩5分",
+        "hours": {
+          "business_start": "9:00",
+          "business_end": "19:00"
+        }
+      },
+      {
+        "clinic_id": 70,
+        "clinic_name": "長野店",
+        "gender_id": "0",
+        "sort_num": 47,
+        "is_partner": 0,
+        "address": "長野県長野市南長野南石堂町1325−3 ら•ごりんビル 6階",
+        "full": "JR「長野駅」徒歩1分",
+        "hours": {
+          "business_start": "9:00",
+          "business_end": "20:00"
+        }
+      },
+      {
+        "clinic_id": 72,
+        "clinic_name": "岐阜店",
+        "gender_id": "0",
+        "sort_num": 48,
+        "is_partner": 0,
+        "address": "岐阜県岐阜市長住町2-3 岐阜ビルディング 4階",
+        "full": "名古屋本線「名鉄岐阜駅」徒歩3分",
         "hours": {
           "business_start": "9:00",
           "business_end": "19:00"
@@ -451,32 +490,6 @@
         }
       },
       {
-        "clinic_id": 70,
-        "clinic_name": "長野店",
-        "gender_id": "0",
-        "sort_num": 47,
-        "is_partner": 0,
-        "address": "長野県長野市南長野南石堂町1325−3 ら•ごりんビル 6階",
-        "full": "JR「長野駅」徒歩1分",
-        "hours": {
-          "business_start": "9:00",
-          "business_end": "20:00"
-        }
-      },
-      {
-        "clinic_id": 72,
-        "clinic_name": "岐阜店",
-        "gender_id": "0",
-        "sort_num": 48,
-        "is_partner": 0,
-        "address": "岐阜県岐阜市長住町2-3 岐阜ビルディング 4階",
-        "full": "名古屋本線「名鉄岐阜駅」徒歩3分",
-        "hours": {
-          "business_start": "9:00",
-          "business_end": "19:00"
-        }
-      },
-      {
         "clinic_id": 82,
         "clinic_name": "四日市店",
         "gender_id": "0",
@@ -509,6 +522,19 @@
         }
       },
       {
+        "clinic_id": 86,
+        "clinic_name": "枚方店",
+        "gender_id": "0",
+        "sort_num": 55,
+        "is_partner": 0,
+        "address": "大阪府枚方市大垣内町2-17-13 枚方洛元ビル3F",
+        "full": "宮之阪駅 徒歩6分\n枚方市駅 徒歩8分",
+        "hours": {
+          "business_start": "9:00",
+          "business_end": "20:00"
+        }
+      },
+      {
         "clinic_id": 35,
         "clinic_name": "梅田店",
         "gender_id": "0",
@@ -516,6 +542,19 @@
         "is_partner": 0,
         "address": "大阪府大阪市北区曾根崎2-12-4 コフレ梅田 1階",
         "full": "谷町線「東梅田駅」徒歩1分\n阪神電鉄「大阪梅田駅」徒歩5分",
+        "hours": {
+          "business_start": "9:00",
+          "business_end": "20:00"
+        }
+      },
+      {
+        "clinic_id": 81,
+        "clinic_name": "天王寺店",
+        "gender_id": "0",
+        "sort_num": 57,
+        "is_partner": 0,
+        "address": "大阪府大阪市阿倍野区阿倍野筋1丁目5−31きんえいアポロビル6F",
+        "full": "天王寺駅 より徒歩1分\n大阪阿部野駅 より徒歩5分",
         "hours": {
           "business_start": "9:00",
           "business_end": "20:00"
@@ -535,32 +574,6 @@
         }
       },
       {
-        "clinic_id": 38,
-        "clinic_name": "三宮店",
-        "gender_id": "0",
-        "sort_num": 63,
-        "is_partner": 0,
-        "address": "兵庫県神戸市中央区三宮町1-4-8 メットライフ神戸三宮ビル 2階",
-        "full": "JR東海道本線「三ノ宮駅」徒歩8分\n阪急神戸本線「神戸三宮」徒歩7分",
-        "hours": {
-          "business_start": "9:00",
-          "business_end": "19:00"
-        }
-      },
-      {
-        "clinic_id": 56,
-        "clinic_name": "和歌山店",
-        "gender_id": "0",
-        "sort_num": 65,
-        "is_partner": 1,
-        "address": "和歌山市太田1-10-8 エヌ・アイ・シー第2ビル 2階",
-        "full": "JR「和歌山駅」東口徒歩2分",
-        "hours": {
-          "business_start": "10:00",
-          "business_end": "20:00"
-        }
-      },
-      {
         "clinic_id": 78,
         "clinic_name": "なんば店",
         "gender_id": "1",
@@ -568,6 +581,19 @@
         "is_partner": 0,
         "address": "大阪府大阪市中央区難波4丁目3-3ホテルロイヤルクラッシック大阪 B1",
         "full": "なんば駅 徒歩3分",
+        "hours": {
+          "business_start": "9:00",
+          "business_end": "19:00"
+        }
+      },
+      {
+        "clinic_id": 38,
+        "clinic_name": "三宮店",
+        "gender_id": "0",
+        "sort_num": 63,
+        "is_partner": 0,
+        "address": "兵庫県神戸市中央区三宮町1-4-8 メットライフ神戸三宮ビル 2階",
+        "full": "JR東海道本線「三ノ宮駅」徒歩8分\n阪急神戸本線「神戸三宮」徒歩7分",
         "hours": {
           "business_start": "9:00",
           "business_end": "19:00"
@@ -587,28 +613,15 @@
         }
       },
       {
-        "clinic_id": 81,
-        "clinic_name": "天王寺店",
+        "clinic_id": 56,
+        "clinic_name": "和歌山店",
         "gender_id": "0",
-        "sort_num": 57,
-        "is_partner": 0,
-        "address": "大阪府大阪市阿倍野区阿倍野筋1丁目5−31きんえいアポロビル6F",
-        "full": "天王寺駅 より徒歩1分\n大阪阿部野駅 より徒歩5分",
+        "sort_num": 65,
+        "is_partner": 1,
+        "address": "和歌山市太田1-10-8 エヌ・アイ・シー第2ビル 2階",
+        "full": "JR「和歌山駅」東口徒歩2分",
         "hours": {
-          "business_start": "9:00",
-          "business_end": "20:00"
-        }
-      },
-      {
-        "clinic_id": 86,
-        "clinic_name": "枚方店",
-        "gender_id": "0",
-        "sort_num": 55,
-        "is_partner": 0,
-        "address": "大阪府枚方市大垣内町2-17-13 枚方洛元ビル3F",
-        "full": "宮之阪駅 徒歩6分\n枚方市駅 徒歩8分",
-        "hours": {
-          "business_start": "9:00",
+          "business_start": "10:00",
           "business_end": "20:00"
         }
       }
@@ -618,6 +631,19 @@
     "area": "中国・四国",
     "id": 6,
     "clinics": [
+      {
+        "clinic_id": 74,
+        "clinic_name": "岡山店",
+        "gender_id": "0",
+        "sort_num": 62,
+        "is_partner": 0,
+        "address": "岡山県岡山市北区大供2-1-1 ハスパリ大供ビル 2階",
+        "full": "JR「岡山駅」徒歩16分",
+        "hours": {
+          "business_start": "9:00",
+          "business_end": "19:00"
+        }
+      },
       {
         "clinic_id": 39,
         "clinic_name": "広島店",
@@ -656,19 +682,6 @@
           "business_start": "9:00",
           "business_end": "19:00"
         }
-      },
-      {
-        "clinic_id": 74,
-        "clinic_name": "岡山店",
-        "gender_id": "0",
-        "sort_num": 62,
-        "is_partner": 0,
-        "address": "岡山県岡山市北区大供2-1-1 ハスパリ大供ビル 2階",
-        "full": "JR「岡山駅」徒歩16分",
-        "hours": {
-          "business_start": "9:00",
-          "business_end": "19:00"
-        }
       }
     ]
   },
@@ -690,6 +703,19 @@
         }
       },
       {
+        "clinic_id": 87,
+        "clinic_name": "博多店",
+        "gender_id": "0",
+        "sort_num": 73,
+        "is_partner": 0,
+        "address": "福岡県博多区博多駅前3-10-14 FL BLD.1 4階",
+        "full": "博多駅 西13出口より徒歩8分",
+        "hours": {
+          "business_start": "9:00",
+          "business_end": "20:00"
+        }
+      },
+      {
         "clinic_id": 45,
         "clinic_name": "小倉店",
         "gender_id": "0",
@@ -700,6 +726,19 @@
         "hours": {
           "business_start": "9:00",
           "business_end": "20:00"
+        }
+      },
+      {
+        "clinic_id": 73,
+        "clinic_name": "長崎店",
+        "gender_id": "0",
+        "sort_num": 77,
+        "is_partner": 0,
+        "address": "長崎県長崎市浜町8-31 グリーンアップ浜町ビル 3階",
+        "full": "長崎電気軌道本線「思案橋駅」徒歩3分",
+        "hours": {
+          "business_start": "9:00",
+          "business_end": "19:00"
         }
       },
       {
@@ -739,32 +778,6 @@
         "hours": {
           "business_start": "9:00",
           "business_end": "19:00"
-        }
-      },
-      {
-        "clinic_id": 73,
-        "clinic_name": "長崎店",
-        "gender_id": "0",
-        "sort_num": 77,
-        "is_partner": 0,
-        "address": "長崎県長崎市浜町8-31 グリーンアップ浜町ビル 3階",
-        "full": "長崎電気軌道本線「思案橋駅」徒歩3分",
-        "hours": {
-          "business_start": "9:00",
-          "business_end": "19:00"
-        }
-      },
-      {
-        "clinic_id": 87,
-        "clinic_name": "博多店",
-        "gender_id": "0",
-        "sort_num": 73,
-        "is_partner": 0,
-        "address": "福岡県博多区博多駅前3-10-14 FL BLD.1 4階",
-        "full": "博多駅 西13出口より徒歩8分",
-        "hours": {
-          "business_start": "9:00",
-          "business_end": "20:00"
         }
       }
     ]
