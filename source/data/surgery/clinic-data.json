@@ -268,6 +268,19 @@
     "id": 6,
     "clinics": [
       {
+        "clinic_id": 74,
+        "clinic_name": "岡山店",
+        "gender_id": "0",
+        "sort_num": 62,
+        "is_partner": 0,
+        "address": "岡山県岡山市北区大供2-1-1 ハスパリ大供ビル 2階",
+        "full": "JR「岡山駅」徒歩16分",
+        "hours": {
+          "business_start": "9:00",
+          "business_end": "19:00"
+        }
+      },
+      {
         "clinic_id": 39,
         "clinic_name": "広島店",
         "gender_id": "0",
@@ -288,19 +301,6 @@
         "is_partner": 0,
         "address": "香川県高松市兵庫町8-1 高松兵庫町ビルディング 1階",
         "full": "高松琴平電気鉄道琴平線「高松築港駅」徒歩8分\nJR予讃線「高松駅」徒歩8分",
-        "hours": {
-          "business_start": "9:00",
-          "business_end": "19:00"
-        }
-      },
-      {
-        "clinic_id": 74,
-        "clinic_name": "岡山店",
-        "gender_id": "0",
-        "sort_num": 62,
-        "is_partner": 0,
-        "address": "岡山県岡山市北区大供2-1-1 ハスパリ大供ビル 2階",
-        "full": "JR「岡山駅」徒歩16分",
         "hours": {
           "business_start": "9:00",
           "business_end": "19:00"
