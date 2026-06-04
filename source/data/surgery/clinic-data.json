@@ -62,19 +62,6 @@
     "id": 2,
     "clinics": [
       {
-        "clinic_id": 20,
-        "clinic_name": "渋谷店",
-        "gender_id": "0",
-        "sort_num": 11,
-        "is_partner": 0,
-        "address": "東京都渋谷区道玄坂2-23-12 フォンティスビル 8階",
-        "full": "JR「渋谷駅」徒歩6分",
-        "hours": {
-          "business_start": "9:00",
-          "business_end": "20:00"
-        }
-      },
-      {
         "clinic_id": 18,
         "clinic_name": "新宿店",
         "gender_id": "0",
@@ -82,6 +69,19 @@
         "is_partner": 0,
         "address": "東京都新宿区新宿3-17−1いさみやビル 4階",
         "full": "JR「新宿駅」徒歩5分\n副都心線「新宿三丁目駅」徒歩1分",
+        "hours": {
+          "business_start": "9:00",
+          "business_end": "20:00"
+        }
+      },
+      {
+        "clinic_id": 20,
+        "clinic_name": "渋谷店",
+        "gender_id": "0",
+        "sort_num": 11,
+        "is_partner": 0,
+        "address": "東京都渋谷区道玄坂2-23-12 フォンティスビル 8階",
+        "full": "JR「渋谷駅」徒歩6分",
         "hours": {
           "business_start": "9:00",
           "business_end": "20:00"
@@ -120,19 +120,6 @@
         }
       },
       {
-        "clinic_id": 27,
-        "clinic_name": "横浜駅前店",
-        "gender_id": "0",
-        "sort_num": 43,
-        "is_partner": 0,
-        "address": "神奈川県横浜市西区北幸1丁目8-2 犬山西口ビルヂング 6階",
-        "full": "横浜市営地下鉄ブルーライン「横浜駅」徒歩1分\nJR「横浜駅」徒歩3分",
-        "hours": {
-          "business_start": "9:00",
-          "business_end": "20:00"
-        }
-      },
-      {
         "clinic_id": 24,
         "clinic_name": "川崎店",
         "gender_id": "0",
@@ -144,6 +131,19 @@
           "business_start": "9:00",
           "business_end": "19:00"
         }
+      },
+      {
+        "clinic_id": 27,
+        "clinic_name": "横浜駅前店",
+        "gender_id": "0",
+        "sort_num": 43,
+        "is_partner": 0,
+        "address": "神奈川県横浜市西区北幸1丁目8-2 犬山西口ビルヂング 6階",
+        "full": "横浜市営地下鉄ブルーライン「横浜駅」徒歩1分\nJR「横浜駅」徒歩3分",
+        "hours": {
+          "business_start": "9:00",
+          "business_end": "20:00"
+        }
       }
     ]
   },
@@ -151,19 +151,6 @@
     "area": "中部",
     "id": 4,
     "clinics": [
-      {
-        "clinic_id": 66,
-        "clinic_name": "栄店",
-        "gender_id": "0",
-        "sort_num": 55,
-        "is_partner": 0,
-        "address": "愛知県名古屋市中区錦3-24-24 錦324ビル 6階",
-        "full": "名古屋地下鉄東山線「栄駅」徒歩1分",
-        "hours": {
-          "business_start": "9:00",
-          "business_end": "20:00"
-        }
-      },
       {
         "clinic_id": 30,
         "clinic_name": "静岡店",
@@ -202,6 +189,19 @@
           "business_start": "9:00",
           "business_end": "20:00"
         }
+      },
+      {
+        "clinic_id": 66,
+        "clinic_name": "栄店",
+        "gender_id": "0",
+        "sort_num": 55,
+        "is_partner": 0,
+        "address": "愛知県名古屋市中区錦3-24-24 錦324ビル 6階",
+        "full": "名古屋地下鉄東山線「栄駅」徒歩1分",
+        "hours": {
+          "business_start": "9:00",
+          "business_end": "20:00"
+        }
       }
     ]
   },
@@ -223,16 +223,16 @@
         }
       },
       {
-        "clinic_id": 38,
-        "clinic_name": "三宮店",
+        "clinic_id": 35,
+        "clinic_name": "梅田店",
         "gender_id": "0",
-        "sort_num": 65,
+        "sort_num": 58,
         "is_partner": 0,
-        "address": "兵庫県神戸市中央区三宮町1-4-8 メットライフ神戸三宮ビル 2階",
-        "full": "JR東海道本線「三ノ宮駅」徒歩8分\n阪急神戸本線「神戸三宮」徒歩7分",
+        "address": "大阪府大阪市北区曾根崎2-12-4 コフレ梅田 1階",
+        "full": "谷町線「東梅田駅」徒歩1分\n阪神電鉄「大阪梅田駅」徒歩5分",
         "hours": {
           "business_start": "9:00",
-          "business_end": "19:00"
+          "business_end": "20:00"
         }
       },
       {
@@ -249,16 +249,16 @@
         }
       },
       {
-        "clinic_id": 35,
-        "clinic_name": "梅田店",
+        "clinic_id": 38,
+        "clinic_name": "三宮店",
         "gender_id": "0",
-        "sort_num": 58,
+        "sort_num": 65,
         "is_partner": 0,
-        "address": "大阪府大阪市北区曾根崎2-12-4 コフレ梅田 1階",
-        "full": "谷町線「東梅田駅」徒歩1分\n阪神電鉄「大阪梅田駅」徒歩5分",
+        "address": "兵庫県神戸市中央区三宮町1-4-8 メットライフ神戸三宮ビル 2階",
+        "full": "JR東海道本線「三ノ宮駅」徒歩8分\n阪急神戸本線「神戸三宮」徒歩7分",
         "hours": {
           "business_start": "9:00",
-          "business_end": "20:00"
+          "business_end": "19:00"
         }
       }
     ]
@@ -268,23 +268,10 @@
     "id": 6,
     "clinics": [
       {
-        "clinic_id": 74,
-        "clinic_name": "岡山店",
-        "gender_id": "0",
-        "sort_num": 64,
-        "is_partner": 0,
-        "address": "岡山県岡山市北区大供2-1-1 ハスパリ大供ビル 2階",
-        "full": "JR「岡山駅」徒歩16分",
-        "hours": {
-          "business_start": "9:00",
-          "business_end": "19:00"
-        }
-      },
-      {
         "clinic_id": 39,
         "clinic_name": "広島店",
         "gender_id": "0",
-        "sort_num": 68,
+        "sort_num": 69,
         "is_partner": 0,
         "address": "広島県広島市中区紙屋町1-1-1 東和ビル 6階",
         "full": "広島電鉄本線「立町駅」徒歩1分\n広島電鉄宇品線「紙屋町東駅」徒歩1分",
@@ -297,10 +284,23 @@
         "clinic_id": 41,
         "clinic_name": "高松店",
         "gender_id": "0",
-        "sort_num": 71,
+        "sort_num": 72,
         "is_partner": 0,
         "address": "香川県高松市兵庫町8-1 高松兵庫町ビルディング 1階",
         "full": "高松琴平電気鉄道琴平線「高松築港駅」徒歩8分\nJR予讃線「高松駅」徒歩8分",
+        "hours": {
+          "business_start": "9:00",
+          "business_end": "19:00"
+        }
+      },
+      {
+        "clinic_id": 74,
+        "clinic_name": "岡山店",
+        "gender_id": "0",
+        "sort_num": 64,
+        "is_partner": 0,
+        "address": "岡山県岡山市北区大供2-1-1 ハスパリ大供ビル 2階",
+        "full": "JR「岡山駅」徒歩16分",
         "hours": {
           "business_start": "9:00",
           "business_end": "19:00"
@@ -313,10 +313,23 @@
     "id": 7,
     "clinics": [
       {
+        "clinic_id": 44,
+        "clinic_name": "天神南店",
+        "gender_id": "0",
+        "sort_num": 75,
+        "is_partner": 0,
+        "address": "福岡県福岡市中央区渡辺通5-24-32 FPGリンクス天神南 4階",
+        "full": "地下鉄七隈線「天神南駅」徒歩1分\n西鉄天神大牟田線「西鉄福岡駅」徒歩2分",
+        "hours": {
+          "business_start": "9:00",
+          "business_end": "20:00"
+        }
+      },
+      {
         "clinic_id": 46,
         "clinic_name": "熊本店",
         "gender_id": "0",
-        "sort_num": 81,
+        "sort_num": 82,
         "is_partner": 0,
         "address": "熊本県熊本市中央区草葉町2-33 A&M草葉ビル 2階",
         "full": "水前寺線「水道町駅」徒歩6分",
@@ -329,7 +342,7 @@
         "clinic_id": 47,
         "clinic_name": "鹿児島店",
         "gender_id": "0",
-        "sort_num": 83,
+        "sort_num": 84,
         "is_partner": 0,
         "address": "鹿児島県鹿児島市金生町6-10 キューブ鹿児島金生町 3階",
         "full": "鹿児島市電「朝日通駅」徒歩2分",
@@ -339,23 +352,10 @@
         }
       },
       {
-        "clinic_id": 44,
-        "clinic_name": "天神南店",
-        "gender_id": "0",
-        "sort_num": 74,
-        "is_partner": 0,
-        "address": "福岡県福岡市中央区渡辺通5-24-32 FPGリンクス天神南 4階",
-        "full": "地下鉄七隈線「天神南駅」徒歩1分\n西鉄天神大牟田線「西鉄福岡駅」徒歩2分",
-        "hours": {
-          "business_start": "9:00",
-          "business_end": "20:00"
-        }
-      },
-      {
         "clinic_id": 48,
         "clinic_name": "那覇店",
         "gender_id": "0",
-        "sort_num": 85,
+        "sort_num": 86,
         "is_partner": 0,
         "address": "沖縄県那覇市銘苅2-2-9 アイリスビル 3階",
         "full": "モノレール「おもろまち駅」徒歩10分\n那覇バス「銘苅一丁目」徒歩3分",
