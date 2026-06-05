@@ -490,19 +490,6 @@
         }
       },
       {
-        "clinic_id": 66,
-        "clinic_name": "栄店",
-        "gender_id": "0",
-        "sort_num": 55,
-        "is_partner": 0,
-        "address": "愛知県名古屋市中区錦3-24-24 錦324ビル 6階",
-        "full": "名古屋地下鉄東山線「栄駅」徒歩1分",
-        "hours": {
-          "business_start": "9:00",
-          "business_end": "20:00"
-        }
-      },
-      {
         "clinic_id": 70,
         "clinic_name": "長野店",
         "gender_id": "0",
@@ -755,7 +742,7 @@
         "sort_num": 68,
         "is_partner": 0,
         "address": "広島県福山市東桜町１−１ 備広福山駅前ビル 5F",
-        "full": "JR 福山駅 徒歩4分",
+        "full": "JR 「福山駅」 徒歩4分",
         "hours": {
           "business_start": "9:00",
           "business_end": "19:00"
