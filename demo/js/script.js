@@ -12,37 +12,44 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
     embedClinicMapInstance1.init();
 
-     // 【ed】
+    // 【ed】
     const embedClinicMapInstance2 = embedClinicMap({
       parentSelector: '#clinic-list-2',
-      clinicType: 'ed'
+      clinicType: 'ed',
     });
     embedClinicMapInstance2.init();
 
-     // 【fat_cooling】
+    // 【fat_cooling】
     const embedClinicMapInstance3 = embedClinicMap({
       parentSelector: '#clinic-list-3',
       clinicType: 'fat_cooling',
     });
     embedClinicMapInstance3.init();
 
-     // 【surgery】
+    // 【surgery】
     const embedClinicMapInstance4 = embedClinicMap({
       parentSelector: '#clinic-list-4',
       clinicType: 'surgery',
     });
     embedClinicMapInstance4.init();
 
-     // 【sururimu】
+    // 【sururimu】
     const embedClinicMapInstance5 = embedClinicMap({
       parentSelector: '#clinic-list-5',
       clinicType: 'sururimu',
     });
     embedClinicMapInstance5.init();
 
-     // 【urology】
+    // 【pinklla】
     const embedClinicMapInstance6 = embedClinicMap({
       parentSelector: '#clinic-list-6',
+      clinicType: 'pinklla',
+    });
+    embedClinicMapInstance6.init();
+
+    // 【urology】
+    const embedClinicMapInstance7 = embedClinicMap({
+      parentSelector: '#clinic-list-7',
       clinicType: 'urology',
       areaColors: [
         '#ff84afff', // 北海道・東北
@@ -54,8 +61,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         '#76d3a6ff', // 九州・沖縄
       ],
     });
-    embedClinicMapInstance6.init();
-    
+    embedClinicMapInstance7.init();
   } catch (e) {
     console.error(e);
   }
