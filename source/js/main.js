@@ -6,7 +6,11 @@
  * @param {'juno' | 'juno-diet' | 'atom'} params.clinicType - クリニックタイプ（必須）
  * @param {Array} [params.areaColors=[]] - カスタムカラー設定（オプション）
  */
-export function embedClinicMap({ parentSelector, clinicType, areaColors = [] }) {
+export function embedClinicMap({
+  parentSelector,
+  clinicType,
+  areaColors = [],
+}) {
   // ──────────────── 引数バリデーション ────────────────
   // バリデーションに失敗した場合は init を no-op で抜けるため、ここでフラグを保持する
   let isValid = true;
@@ -23,7 +27,7 @@ export function embedClinicMap({ parentSelector, clinicType, areaColors = [] }) 
 
   /**
    * 性別ラベル定義
-   * 
+   *
    * @property {string} 1 - 男性専用
    * @property {string} 2 - 女性専用
    */
@@ -44,13 +48,13 @@ export function embedClinicMap({ parentSelector, clinicType, areaColors = [] }) 
    * @property {string} 7 - 九州・沖縄のカラーコード文字列
    */
   const defaultAreaColors = {
-      1: '#93ace2', // 北海道・東北
-      2: '#4bbfb4', // 東京
-      3: '#4bbfb4', // 関東
-      4: '#a2da62', // 中部
-      5: '#e8d54a', // 近畿
-      6: '#f27b72', // 中国・四国
-      7: '#ed96b1', // 九州・沖縄
+    1: '#93ace2', // 北海道・東北
+    2: '#4bbfb4', // 東京
+    3: '#4bbfb4', // 関東
+    4: '#a2da62', // 中部
+    5: '#e8d54a', // 近畿
+    6: '#f27b72', // 中国・四国
+    7: '#ed96b1', // 九州・沖縄
   };
 
   /**
@@ -64,14 +68,20 @@ export function embedClinicMap({ parentSelector, clinicType, areaColors = [] }) 
     if (!Array.isArray(colors) || colors.length === 0) return {};
 
     // CSSインジェクション対策：HEXカラー形式（#RGB / #RGBA / #RRGGBB / #RRGGBBAA）のみ許可
-    const COLOR_RE = /^#([0-9a-fA-F]{3}|[0-9a-fA-F]{4}|[0-9a-fA-F]{6}|[0-9a-fA-F]{8})$/;
+    const COLOR_RE =
+      /^#([0-9a-fA-F]{3}|[0-9a-fA-F]{4}|[0-9a-fA-F]{6}|[0-9a-fA-F]{8})$/;
     const FALLBACK_COLOR = '#ccc';
 
     const formattedColors = {};
     // areaColors が指定された場合、ID を全て埋める（不正・空・不足は #ccc）
-    for (let areaId = 1; areaId <= Object.keys(defaultAreaColors).length; areaId++) {
+    for (
+      let areaId = 1;
+      areaId <= Object.keys(defaultAreaColors).length;
+      areaId++
+    ) {
       const color = colors[areaId - 1];
-      formattedColors[areaId] = (color && COLOR_RE.test(color)) ? color : FALLBACK_COLOR;
+      formattedColors[areaId] =
+        color && COLOR_RE.test(color) ? color : FALLBACK_COLOR;
     }
 
     return formattedColors;
@@ -95,14 +105,19 @@ export function embedClinicMap({ parentSelector, clinicType, areaColors = [] }) 
    *       init() を非同期実行する間に対象要素が外から差し替えられるケースは想定していない。
    */
   const state = {
-    fetchPath: isValid && typeof clinicType === 'string' ? clinicType.replace(/-/g, '/') : '',
+    fetchPath:
+      isValid && typeof clinicType === 'string'
+        ? clinicType.replace(/-/g, '/')
+        : '',
     mapSvg: '',
     clinicDetails: [],
-    hasTitle: isValid && !!document.querySelector(`${parentSelector} [data-cl-title]`),
-    hasMap: isValid && !!document.querySelector(`${parentSelector} [data-cl-map]`),
-    hasDetailsAccordion: isValid && !!document.querySelector(
-      `${parentSelector} [data-cl-details-accordion]`
-    ),
+    hasTitle:
+      isValid && !!document.querySelector(`${parentSelector} [data-cl-title]`),
+    hasMap:
+      isValid && !!document.querySelector(`${parentSelector} [data-cl-map]`),
+    hasDetailsAccordion:
+      isValid &&
+      !!document.querySelector(`${parentSelector} [data-cl-details-accordion]`),
   };
 
   /**
@@ -119,7 +134,9 @@ export function embedClinicMap({ parentSelector, clinicType, areaColors = [] }) 
     }
     // CSS/HTML への文字列補間で利用するため、安全な ID セレクタ形式のみ許可する
     if (!/^#[A-Za-z_][A-Za-z0-9_-]*$/.test(parentSelector.trim())) {
-      throw new Error('"parentSelector" must be an ID selector of the form "#alphanumeric-id".');
+      throw new Error(
+        '"parentSelector" must be an ID selector of the form "#alphanumeric-id".',
+      );
     }
 
     // ──────── クリニックタイプ ────────
@@ -178,10 +195,11 @@ export function embedClinicMap({ parentSelector, clinicType, areaColors = [] }) 
     // タイトル
     if (state.hasTitle) {
       const titleEl = document.querySelector(
-        `${parentSelector} [data-cl-title]`
+        `${parentSelector} [data-cl-title]`,
       );
 
-      titleEl.innerHTML = '<div class="cl-title"><div class="cl-title__main">クリニック一覧</div><div class="cl-title__note">ほとんどのクリニックが</div><div class="cl-title__sub">駅から約<span>5</span>分以内</div></div>';
+      titleEl.innerHTML =
+        '<div class="cl-title"><div class="cl-title__main">クリニック一覧</div><div class="cl-title__note">ほとんどのクリニックが</div><div class="cl-title__sub">駅から約<span>5</span>分以内</div></div>';
     }
 
     // 地図SVG
@@ -276,7 +294,7 @@ export function embedClinicMap({ parentSelector, clinicType, areaColors = [] }) 
     // 院詳細アコーディオン
     if (state.hasDetailsAccordion && state.clinicDetails.length > 0) {
       const detailsAccordionElement = document.querySelector(
-        `${parentSelector} [data-cl-details-accordion]`
+        `${parentSelector} [data-cl-details-accordion]`,
       );
 
       const detailsAccordionDom = createClinicDetailsAccordion();
@@ -353,7 +371,7 @@ export function embedClinicMap({ parentSelector, clinicType, areaColors = [] }) 
         </div>
       `;
       const bodyEl = areaWrapper.querySelector(
-        '.cl-details-acd__list-item-body'
+        '.cl-details-acd__list-item-body',
       );
 
       // エリア毎の院情報一覧のDOMを作成
@@ -365,7 +383,7 @@ export function embedClinicMap({ parentSelector, clinicType, areaColors = [] }) 
         <div class="cl-details-acd__list-sub-item">
           <div class="cl-details-acd__list-sub-item-header">
             ${escapeHtml(clinic.clinic_name)}
-            ${clinic.is_partner ? "（提携院）" : ""}
+            ${clinic.is_partner ? '（提携院）' : ''}
             ${GENDER_LABELS[clinic.gender_id] ? `<span class='cl-details-acd__list-sub-item-header-label'>${GENDER_LABELS[clinic.gender_id]}</span>` : ''}
           </div>
           <table class="cl-details-acd__list-sub-item-table">
@@ -470,13 +488,17 @@ export function embedClinicMap({ parentSelector, clinicType, areaColors = [] }) 
         text-decoration: none;
         ${state.hasDetailsAccordion ? 'cursor:pointer;' : 'pointer-events:none; cursor:default;'}
       }
-      ${state.hasDetailsAccordion ? `
+      ${
+        state.hasDetailsAccordion
+          ? `
       @media (hover: hover) {
         ${parentSelector} .cl-map__nav-item:hover {
           transform: scale(.95);
           transition: all 0.2s;
         }
-      }` : ``}
+      }`
+          : ``
+      }
       ${parentSelector} .cl-map__nav-item-1 {
         top: 14.5%;
         left: 37.5%;
@@ -698,12 +720,11 @@ export function embedClinicMap({ parentSelector, clinicType, areaColors = [] }) 
    */
 
   const fetchAllWithSetData = async () => {
-
     // 院情報詳細JSONのfetch先URL
-    if (state.hasMap ||state.hasDetailsAccordion) {
+    if (state.hasMap || state.hasDetailsAccordion) {
       const url = new URL(
         `../data/${state.fetchPath}/clinic-data.json`,
-        import.meta.url
+        import.meta.url,
       );
       const resDetails = await fetchData(url);
 
@@ -745,18 +766,41 @@ export function embedClinicMap({ parentSelector, clinicType, areaColors = [] }) 
    * @returns {void}
    */
   const addEvents = () => {
-    const navItems = document.querySelectorAll(`${parentSelector} .cl-map__nav-item`);
-    
+    // 全てのチェックを false に設定
+    const acdCheckboxes = document.querySelectorAll(
+      `${parentSelector} .cl-details-acd__list-item-header input[type="checkbox"]`,
+    );
+    acdCheckboxes.forEach((cb) => {
+      cb.addEventListener('change', () => {
+        if (cb.checked) {
+          acdCheckboxes.forEach((other) => {
+            if (other !== cb) other.checked = false;
+          });
+        }
+      });
+    });
+
+    const navItems = document.querySelectorAll(
+      `${parentSelector} .cl-map__nav-item`,
+    );
+
     navItems.forEach((item) => {
       item.addEventListener('click', () => {
         // CSSでのスムーズスクロールを活かすため e.preventDefault() は呼ばない
         const targetSelector = item.getAttribute('href');
-        
+
         if (targetSelector && targetSelector.startsWith('#')) {
           const targetEl = document.querySelector(targetSelector);
           if (targetEl) {
             const checkbox = targetEl.querySelector('input[type="checkbox"]');
             if (checkbox) {
+              document
+                .querySelectorAll(
+                  `${parentSelector} .cl-details-acd__list-item-header input[type="checkbox"]`,
+                )
+                .forEach((cb) => {
+                  if (cb !== checkbox) cb.checked = false;
+                });
               checkbox.checked = true;
             }
           }
