@@ -776,6 +776,11 @@ export function embedClinicMap({
           acdCheckboxes.forEach((other) => {
             if (other !== cb) other.checked = false;
           });
+          // 他のアコーディオンが閉じるトランジション（0.3s）完了後に上部へスクロール
+          const listItem = cb.closest('.cl-details-acd__list-item');
+          if (listItem) {
+            listItem.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
         }
       });
     });
