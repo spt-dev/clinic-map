@@ -736,13 +736,13 @@
         }
       },
       {
-        "clinic_id": 59,
-        "clinic_name": "松山店",
+        "clinic_id": 58,
+        "clinic_name": "松江店",
         "gender_id": "0",
-        "sort_num": 76,
+        "sort_num": 73,
         "is_partner": 1,
-        "address": "愛媛県松山市大街道2-6-10 児玉写真館ビル 2階",
-        "full": "伊予鉄道城南線「大街道駅」徒歩3分",
+        "address": "島根県松江市東朝日町136-4 TMDビル 1階",
+        "full": "JR「松江駅」徒歩2分",
         "hours": {
           "business_start": "10:00",
           "business_end": "20:00"
