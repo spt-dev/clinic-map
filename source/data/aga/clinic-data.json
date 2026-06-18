@@ -2,6 +2,7 @@
   {
     "area": "北海道・東北",
     "id": 1,
+    "test": 2222,
     "clinics": [
       {
         "clinic_id": 2,
