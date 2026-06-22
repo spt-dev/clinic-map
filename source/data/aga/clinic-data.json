@@ -469,6 +469,19 @@
           "business_start": "9:00",
           "business_end": "20:00"
         }
+      },
+      {
+        "clinic_id": 92,
+        "clinic_name": "船橋店",
+        "gender_id": "0",
+        "sort_num": 38,
+        "is_partner": 0,
+        "address": "千葉県船橋市本町4丁目41−19本町セントラルビル",
+        "full": "京成船橋駅 徒歩3分\nJR 船橋駅 徒歩5分",
+        "hours": {
+          "business_start": "9:00",
+          "business_end": "19:00"
+        }
       }
     ]
   },
