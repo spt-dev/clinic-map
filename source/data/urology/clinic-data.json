@@ -101,19 +101,6 @@
         }
       },
       {
-        "clinic_id": 22,
-        "clinic_name": "品川店",
-        "gender_id": "1",
-        "sort_num": 15,
-        "is_partner": 0,
-        "address": "東京都港区港南2-16-1 品川イーストワンタワー 3階",
-        "full": "JR「品川駅」徒歩約3分",
-        "hours": {
-          "business_start": "9:00",
-          "business_end": "19:00"
-        }
-      },
-      {
         "clinic_id": 23,
         "clinic_name": "新橋店",
         "gender_id": "1",
@@ -315,19 +302,6 @@
         }
       },
       {
-        "clinic_id": 76,
-        "clinic_name": "川越店",
-        "gender_id": "0",
-        "sort_num": 37,
-        "is_partner": 0,
-        "address": "埼玉県川越市脇田本町1-3グランベル川越5階",
-        "full": "JR川越駅 徒歩1分",
-        "hours": {
-          "business_start": "9:00",
-          "business_end": "19:00"
-        }
-      },
-      {
         "clinic_id": 77,
         "clinic_name": "川口店",
         "gender_id": "0",
@@ -335,19 +309,6 @@
         "is_partner": 0,
         "address": "埼玉県川口市栄町３丁目５−１５α-アルファー川口 ３階",
         "full": "JR川口駅 徒歩4分",
-        "hours": {
-          "business_start": "9:00",
-          "business_end": "19:00"
-        }
-      },
-      {
-        "clinic_id": 80,
-        "clinic_name": "浦和店",
-        "gender_id": "0",
-        "sort_num": 34,
-        "is_partner": 0,
-        "address": "埼玉県さいたま市浦和区高砂2-6-3  ファーストセンタービル 4F",
-        "full": "JR浦和駅 徒歩5分",
         "hours": {
           "business_start": "9:00",
           "business_end": "19:00"
