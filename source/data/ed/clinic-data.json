@@ -114,19 +114,6 @@
         }
       },
       {
-        "clinic_id": 20,
-        "clinic_name": "渋谷店",
-        "gender_id": "0",
-        "sort_num": 11,
-        "is_partner": 0,
-        "address": "東京都渋谷区道玄坂2-23-12 フォンティスビル 8階",
-        "full": "JR「渋谷駅」徒歩6分",
-        "hours": {
-          "business_start": "9:00",
-          "business_end": "20:00"
-        }
-      },
-      {
         "clinic_id": 23,
         "clinic_name": "新橋店",
         "gender_id": "1",
@@ -137,19 +124,6 @@
         "hours": {
           "business_start": "10:00",
           "business_end": "19:00"
-        }
-      },
-      {
-        "clinic_id": 53,
-        "clinic_name": "八王子店",
-        "gender_id": "0",
-        "sort_num": 25,
-        "is_partner": 1,
-        "address": "東京都八王子市旭町10-3 安嶋中央ビル 5階B",
-        "full": "JR「八王子駅」徒歩2分",
-        "hours": {
-          "business_start": "10:00",
-          "business_end": "20:00"
         }
       },
       {
@@ -263,19 +237,6 @@
         }
       },
       {
-        "clinic_id": 11,
-        "clinic_name": "柏店",
-        "gender_id": "0",
-        "sort_num": 40,
-        "is_partner": 0,
-        "address": "千葉県柏市柏2丁目5-3 マルマンビル 3階",
-        "full": "JR常磐線「柏駅」徒歩2分",
-        "hours": {
-          "business_start": "9:00",
-          "business_end": "19:00"
-        }
-      },
-      {
         "clinic_id": 12,
         "clinic_name": "松戸店",
         "gender_id": "0",
@@ -322,19 +283,6 @@
         "is_partner": 0,
         "address": "茨城県水戸市宮町2-4-33 小林ビル 2階",
         "full": "JR「水戸駅」徒歩5分",
-        "hours": {
-          "business_start": "9:00",
-          "business_end": "19:00"
-        }
-      },
-      {
-        "clinic_id": 75,
-        "clinic_name": "藤沢店",
-        "gender_id": "0",
-        "sort_num": 47,
-        "is_partner": 0,
-        "address": "神奈川県藤沢市南藤沢２−８ K&Sビルディング501号室",
-        "full": "JR藤沢駅南口 徒歩3分",
         "hours": {
           "business_start": "9:00",
           "business_end": "19:00"
@@ -535,19 +483,6 @@
         }
       },
       {
-        "clinic_id": 37,
-        "clinic_name": "心斎橋店",
-        "gender_id": "0",
-        "sort_num": 65,
-        "is_partner": 0,
-        "address": "\n大阪府大阪市中央区南船場3-6-18 ケーズビル 10階",
-        "full": "御堂筋線「心斎橋駅」徒歩2分",
-        "hours": {
-          "business_start": "9:00",
-          "business_end": "20:00"
-        }
-      },
-      {
         "clinic_id": 38,
         "clinic_name": "三宮店",
         "gender_id": "0",
@@ -607,19 +542,6 @@
         "is_partner": 0,
         "address": "大阪府大阪市阿倍野区阿倍野筋1丁目5−31きんえいアポロビル6F",
         "full": "天王寺駅 より徒歩1分\n大阪阿部野駅 より徒歩5分",
-        "hours": {
-          "business_start": "9:00",
-          "business_end": "20:00"
-        }
-      },
-      {
-        "clinic_id": 86,
-        "clinic_name": "枚方店",
-        "gender_id": "0",
-        "sort_num": 61,
-        "is_partner": 0,
-        "address": "大阪府枚方市大垣内町2-17-13 枚方洛元ビル3F",
-        "full": "宮之阪駅 徒歩6分\n枚方市駅 徒歩8分",
         "hours": {
           "business_start": "9:00",
           "business_end": "20:00"
