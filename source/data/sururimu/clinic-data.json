@@ -315,6 +315,45 @@
         }
       },
       {
+        "clinic_id": 10,
+        "clinic_name": "千葉店",
+        "gender_id": "0",
+        "sort_num": 39,
+        "is_partner": 0,
+        "address": "千葉県千葉市中央区富士見2-8-1エキニア千葉 6階",
+        "full": "JR総武本線「千葉駅」徒歩11分\n京成千葉線「京成千葉駅」徒歩7分",
+        "hours": {
+          "business_start": "9:00",
+          "business_end": "19:00"
+        }
+      },
+      {
+        "clinic_id": 11,
+        "clinic_name": "柏店",
+        "gender_id": "0",
+        "sort_num": 40,
+        "is_partner": 0,
+        "address": "千葉県柏市柏2丁目5-3 マルマンビル 3階",
+        "full": "JR常磐線「柏駅」徒歩2分",
+        "hours": {
+          "business_start": "9:00",
+          "business_end": "19:00"
+        }
+      },
+      {
+        "clinic_id": 12,
+        "clinic_name": "松戸店",
+        "gender_id": "0",
+        "sort_num": 41,
+        "is_partner": 0,
+        "address": "千葉県松戸市松戸1307-1 キテミテマツド 8階",
+        "full": "JR常磐線/新京成線「松戸駅」徒歩約3分",
+        "hours": {
+          "business_start": "9:00",
+          "business_end": "19:00"
+        }
+      },
+      {
         "clinic_id": 24,
         "clinic_name": "川崎店",
         "gender_id": "0",
