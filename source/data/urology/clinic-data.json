@@ -77,7 +77,7 @@
       {
         "clinic_id": 17,
         "clinic_name": "新宿店",
-        "gender_id": "1",
+        "gender_id": "0",
         "sort_num": 8,
         "is_partner": 0,
         "address": "東京都新宿区西新宿7-10-7 加賀谷ビル 7階・5階",
@@ -90,7 +90,7 @@
       {
         "clinic_id": 23,
         "clinic_name": "新橋店",
-        "gender_id": "1",
+        "gender_id": "0",
         "sort_num": 16,
         "is_partner": 0,
         "address": "東京都港区新橋1-5-5 グランベル銀座ビルII 10階",
@@ -129,7 +129,7 @@
       {
         "clinic_id": 84,
         "clinic_name": "錦糸町店",
-        "gender_id": "1",
+        "gender_id": "0",
         "sort_num": 42,
         "is_partner": 0,
         "address": "東京都墨田区江東橋4丁目22−4 ガーベラ錦糸町ビル2階",
@@ -239,7 +239,7 @@
       {
         "clinic_id": 25,
         "clinic_name": "横浜店",
-        "gender_id": "1",
+        "gender_id": "0",
         "sort_num": 44,
         "is_partner": 0,
         "address": "神奈川県横浜市西区北幸2丁目13-20第7NYビル 3階・4階",
@@ -362,7 +362,7 @@
       {
         "clinic_id": 32,
         "clinic_name": "名古屋店",
-        "gender_id": "1",
+        "gender_id": "0",
         "sort_num": 56,
         "is_partner": 0,
         "address": "愛知県名古屋市中村区名駅3-25-3 大橋ビルディング 5階",
@@ -472,7 +472,7 @@
       {
         "clinic_id": 78,
         "clinic_name": "なんば店",
-        "gender_id": "1",
+        "gender_id": "0",
         "sort_num": 66,
         "is_partner": 0,
         "address": "大阪府大阪市中央区難波4丁目3-3ホテルロイヤルクラッシック大阪 B1",
@@ -588,7 +588,7 @@
       {
         "clinic_id": 43,
         "clinic_name": "天神店",
-        "gender_id": "1",
+        "gender_id": "0",
         "sort_num": 77,
         "is_partner": 0,
         "address": "福岡県福岡市中央区渡辺通5-24 FPG links TENJIN MINAMI 4階",
