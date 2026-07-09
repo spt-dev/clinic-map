@@ -827,6 +827,19 @@
         }
       },
       {
+        "clinic_id": 59,
+        "clinic_name": "松山店",
+        "gender_id": "0",
+        "sort_num": 81,
+        "is_partner": 1,
+        "address": "愛媛県松山市大街道2-6-10 児玉写真館ビル 2階",
+        "full": "伊予鉄道城南線「大街道駅」徒歩3分",
+        "hours": {
+          "business_start": "10:00",
+          "business_end": "20:00"
+        }
+      },
+      {
         "clinic_id": 74,
         "clinic_name": "岡山店",
         "gender_id": "0",
@@ -860,6 +873,19 @@
         "is_partner": 0,
         "address": "岡山県倉敷市阿知3丁目14−7 MIKIYAビル 1F",
         "full": "JR 倉敷駅 南口から徒歩8分\n倉敷市駅 徒歩8分",
+        "hours": {
+          "business_start": "9:00",
+          "business_end": "19:00"
+        }
+      },
+      {
+        "clinic_id": 95,
+        "clinic_name": "◆高松店",
+        "gender_id": "0",
+        "sort_num": 77,
+        "is_partner": 1,
+        "address": "香川県高松市丸亀町2-13 高松丸亀町弐番街 3号館 3階",
+        "full": "JR「高松駅」徒歩11分\n琴平電鉄琴平線「片原町駅」徒歩6分",
         "hours": {
           "business_start": "9:00",
           "business_end": "19:00"
