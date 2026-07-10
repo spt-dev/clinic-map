@@ -62,19 +62,6 @@
     "id": 2,
     "clinics": [
       {
-        "clinic_id": 14,
-        "clinic_name": "錦糸町店",
-        "gender_id": "0",
-        "sort_num": 21,
-        "is_partner": 0,
-        "address": "東京都墨田区江東橋4-25-7 JUスカイタウン錦糸町 6階",
-        "full": "JR「錦糸町駅」徒歩5分",
-        "hours": {
-          "business_start": "9:00",
-          "business_end": "20:00"
-        }
-      },
-      {
         "clinic_id": 15,
         "clinic_name": "池袋西口店",
         "gender_id": "0",
