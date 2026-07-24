@@ -554,19 +554,6 @@
         }
       },
       {
-        "clinic_id": 42,
-        "clinic_name": "松山店",
-        "gender_id": "0",
-        "sort_num": 80,
-        "is_partner": 0,
-        "address": "愛媛県松山市三番町4-9-10 ISビル 3階",
-        "full": "伊予鉄道高浜線「松山市駅」徒歩7分",
-        "hours": {
-          "business_start": "9:00",
-          "business_end": "19:00"
-        }
-      },
-      {
         "clinic_id": 59,
         "clinic_name": "松山店",
         "gender_id": "0",
