@@ -554,19 +554,6 @@
         }
       },
       {
-        "clinic_id": 41,
-        "clinic_name": "高松店",
-        "gender_id": "0",
-        "sort_num": 77,
-        "is_partner": 0,
-        "address": "香川県高松市兵庫町8-1 高松兵庫町ビルディング 1階",
-        "full": "高松琴平電気鉄道琴平線「高松築港駅」徒歩8分\nJR予讃線「高松駅」徒歩8分",
-        "hours": {
-          "business_start": "9:00",
-          "business_end": "19:00"
-        }
-      },
-      {
         "clinic_id": 42,
         "clinic_name": "松山店",
         "gender_id": "0",
