@@ -638,6 +638,19 @@
         }
       },
       {
+        "clinic_id": 44,
+        "clinic_name": "天神南店",
+        "gender_id": "0",
+        "sort_num": 83,
+        "is_partner": 0,
+        "address": "福岡県福岡市中央区渡辺通5-24-32 FPGリンクス天神南 4階",
+        "full": "地下鉄七隈線「天神南駅」徒歩1分\n西鉄天神大牟田線「西鉄福岡駅」徒歩2分",
+        "hours": {
+          "business_start": "9:00",
+          "business_end": "20:00"
+        }
+      },
+      {
         "clinic_id": 45,
         "clinic_name": "小倉店",
         "gender_id": "0",
