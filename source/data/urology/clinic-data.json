@@ -625,19 +625,6 @@
     "id": 7,
     "clinics": [
       {
-        "clinic_id": 43,
-        "clinic_name": "天神店",
-        "gender_id": "0",
-        "sort_num": 81,
-        "is_partner": 0,
-        "address": "福岡県福岡市中央区渡辺通5-24 FPG links TENJIN MINAMI 4階",
-        "full": "市営地下鉄七隈線「天神南駅」徒歩1分\n西日本鉄道天神大牟田「西鉄福岡駅」徒歩3分",
-        "hours": {
-          "business_start": "9:00",
-          "business_end": "20:00"
-        }
-      },
-      {
         "clinic_id": 44,
         "clinic_name": "天神南店",
         "gender_id": "0",
