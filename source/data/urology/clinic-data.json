@@ -75,19 +75,6 @@
     "id": 2,
     "clinics": [
       {
-        "clinic_id": 15,
-        "clinic_name": "池袋西口店",
-        "gender_id": "0",
-        "sort_num": 14,
-        "is_partner": 0,
-        "address": "東京都豊島区西池袋3丁目29−14一平ビル 4F",
-        "full": "JR「池袋駅」徒歩5分",
-        "hours": {
-          "business_start": "9:00",
-          "business_end": "20:00"
-        }
-      },
-      {
         "clinic_id": 17,
         "clinic_name": "新宿店",
         "gender_id": "0",
@@ -490,19 +477,6 @@
         "is_partner": 0,
         "address": "兵庫県神戸市中央区三宮町1-4-8 メットライフ神戸三宮ビル 2階",
         "full": "JR東海道本線「三ノ宮駅」徒歩8分\n阪急神戸本線「神戸三宮」徒歩7分",
-        "hours": {
-          "business_start": "9:00",
-          "business_end": "19:00"
-        }
-      },
-      {
-        "clinic_id": 78,
-        "clinic_name": "なんば店",
-        "gender_id": "0",
-        "sort_num": 68,
-        "is_partner": 0,
-        "address": "大阪府大阪市中央区難波4丁目3-3ホテルロイヤルクラッシック大阪 B1",
-        "full": "なんば駅 徒歩3分",
         "hours": {
           "business_start": "9:00",
           "business_end": "19:00"
