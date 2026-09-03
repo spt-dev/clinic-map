@@ -114,19 +114,6 @@
         }
       },
       {
-        "clinic_id": 15,
-        "clinic_name": "池袋西口店",
-        "gender_id": "0",
-        "sort_num": 14,
-        "is_partner": 0,
-        "address": "東京都豊島区西池袋3丁目29−14一平ビル 4F",
-        "full": "JR「池袋駅」徒歩5分",
-        "hours": {
-          "business_start": "9:00",
-          "business_end": "20:00"
-        }
-      },
-      {
         "clinic_id": 16,
         "clinic_name": "広尾店",
         "gender_id": "0",
@@ -166,19 +153,6 @@
         }
       },
       {
-        "clinic_id": 21,
-        "clinic_name": "表参道店",
-        "gender_id": "0",
-        "sort_num": 15,
-        "is_partner": 0,
-        "address": "東京都港区南青山5-6-6　ARISTO南青山Ⅲ 2階",
-        "full": "東京メトロ銀座線「表参道駅」徒歩約1分\n東京メトロ千代田線「表参道駅」徒歩約1分\n東京メトロ半蔵門線「表参道駅」徒歩約1分",
-        "hours": {
-          "business_start": "9:00",
-          "business_end": "19:00"
-        }
-      },
-      {
         "clinic_id": 23,
         "clinic_name": "新橋店",
         "gender_id": "0",
@@ -189,19 +163,6 @@
         "hours": {
           "business_start": "10:00",
           "business_end": "19:00"
-        }
-      },
-      {
-        "clinic_id": 51,
-        "clinic_name": "銀座店",
-        "gender_id": "0",
-        "sort_num": 17,
-        "is_partner": 1,
-        "address": "東京都中央区銀座4-2-2 第1弥生ビル 4階",
-        "full": "銀座線「銀座駅」徒歩1分\nJR「有楽町駅」徒歩5分",
-        "hours": {
-          "business_start": "10:00",
-          "business_end": "20:00"
         }
       },
       {
@@ -413,19 +374,6 @@
         "is_partner": 0,
         "address": "埼玉県川口市栄町３丁目５−１５α-アルファー川口 ３階",
         "full": "JR川口駅 徒歩4分",
-        "hours": {
-          "business_start": "9:00",
-          "business_end": "19:00"
-        }
-      },
-      {
-        "clinic_id": 80,
-        "clinic_name": "浦和店",
-        "gender_id": "0",
-        "sort_num": 36,
-        "is_partner": 0,
-        "address": "埼玉県さいたま市浦和区高砂2-6-3  ファーストセンタービル 4F",
-        "full": "JR浦和駅 徒歩5分",
         "hours": {
           "business_start": "9:00",
           "business_end": "19:00"
