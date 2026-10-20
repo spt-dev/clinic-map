@@ -630,6 +630,19 @@
           "business_start": "9:00",
           "business_end": "19:00"
         }
+      },
+      {
+        "clinic_id": 97,
+        "clinic_name": "徳島店",
+        "gender_id": "0",
+        "sort_num": 74,
+        "is_partner": 0,
+        "address": "徳島県徳島市寺島本町西1丁目5",
+        "full": "JR 徳島駅 から徒歩5分",
+        "hours": {
+          "business_start": "9:00",
+          "business_end": "19:00"
+        }
       }
     ]
   },
