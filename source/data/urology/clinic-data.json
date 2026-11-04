@@ -75,6 +75,19 @@
     "id": 2,
     "clinics": [
       {
+        "clinic_id": 14,
+        "clinic_name": "錦糸町店",
+        "gender_id": "0",
+        "sort_num": 22,
+        "is_partner": 0,
+        "address": "東京都墨田区江東橋4-25-7 JUスカイタウン錦糸町 6階",
+        "full": "JR「錦糸町駅」徒歩5分",
+        "hours": {
+          "business_start": "9:00",
+          "business_end": "20:00"
+        }
+      },
+      {
         "clinic_id": 17,
         "clinic_name": "新宿店",
         "gender_id": "0",
@@ -121,19 +134,6 @@
         "is_partner": 0,
         "address": "東京都町田市原町田6-3-3 町映ビル 6階　",
         "full": "小田急小田原線「町田駅」徒歩2分",
-        "hours": {
-          "business_start": "9:00",
-          "business_end": "20:00"
-        }
-      },
-      {
-        "clinic_id": 84,
-        "clinic_name": "錦糸町店",
-        "gender_id": "0",
-        "sort_num": 43,
-        "is_partner": 0,
-        "address": "東京都墨田区江東橋4丁目22−4 ガーベラ錦糸町ビル2階",
-        "full": "錦糸町駅より徒歩約3分",
         "hours": {
           "business_start": "9:00",
           "business_end": "20:00"
